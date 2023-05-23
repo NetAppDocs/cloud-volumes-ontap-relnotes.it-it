@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: reference-issues.html 
+keywords: issues, bugs, known issues 
+summary: 'I problemi noti identificano i problemi che potrebbero impedire l"utilizzo corretto di questa versione del prodotto.' 
+---
+= Problemi noti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+I problemi noti identificano i problemi che potrebbero impedire l'utilizzo corretto di questa versione del prodotto.
+
+Non ci sono problemi noti in questa versione specifici di Cloud Volumes ONTAP.
+
+I problemi noti relativi al software ONTAP sono disponibili in https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^].

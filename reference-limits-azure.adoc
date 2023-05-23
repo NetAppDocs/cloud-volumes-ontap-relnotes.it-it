@@ -1,0 +1,606 @@
+---
+sidebar: sidebar 
+permalink: reference-limits-azure.html 
+keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM, page blobs, ebs, managed disks 
+summary: Cloud Volumes ONTAP ha limiti di configurazione dello storage in Azure per fornire operazioni affidabili. Per ottenere prestazioni ottimali, non configurare il sistema ai valori massimi. 
+---
+= Limiti di storage in Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP ha limiti di configurazione dello storage per garantire operazioni affidabili. Per ottenere prestazioni ottimali, non configurare il sistema ai valori massimi.
+
+
+
+== Capacità massima del sistema per licenza
+
+La capacità massima del sistema per un sistema Cloud Volumes ONTAP è determinata dalla relativa licenza. La capacità massima del sistema include lo storage basato su disco e lo storage a oggetti utilizzato per il tiering dei dati.
+
+NetApp non supporta il superamento del limite di capacità del sistema. Se si raggiunge il limite di capacità concesso in licenza, BlueXP visualizza il messaggio Action Required (azione richiesta) e non consente più di aggiungere dischi aggiuntivi.
+
+[cols="25,75"]
+|===
+| Licenza | Capacità massima del sistema (dischi + storage a oggetti) 
+
+
+| Freemium | 500 GiB 
+
+
+| ESPLORAZIONE DI PAYGO | 2 TIB (il tiering dei dati non è supportato con Explore) 
+
+
+| Standard PAYGO | 10 TIB 
+
+
+| PAYGO Premium | 368 TIB 
+
+
+| Licenza basata su nodo | 368 TIB per licenza 
+
+
+| Licenza basata sulla capacità | 2 PIB 
+|===
+.Per ha, il limite di capacità della licenza è per nodo o per l'intera coppia ha?
+Il limite di capacità è per l'intera coppia ha. Non è per nodo. Ad esempio, se si utilizza la licenza Premium, è possibile avere fino a 368 TIB di capacità tra entrambi i nodi.
+
+
+
+== Limiti aggregati
+
+Cloud Volumes ONTAP utilizza lo storage Azure come dischi e li raggruppa in _aggregati_. Gli aggregati forniscono storage ai volumi.
+
+[cols="2*"]
+|===
+| Parametro | Limite 
+
+
+| Numero massimo di aggregati | Uguale al limite di dischi 
+
+
+| Dimensione massima dell'aggregato ^1^ | 384 TIB di capacità raw per nodo singolo ^2^ 352 TIB di capacità raw per nodo singolo con PAYGO 96 TIB di capacità raw per coppie ha con page blob 384 TIB di capacità raw per coppie ha con dischi gestiti 
+
+
+| Dischi per aggregato | 1-12 ^3^ 
+
+
+| Numero massimo di gruppi RAID per aggregato | 1 
+|===
+Note:
+
+. Il limite di capacità aggregata si basa sui dischi che compongono l'aggregato. Il limite non include lo storage a oggetti utilizzato per il tiering dei dati.
+. Se si utilizza una licenza basata su nodo, sono necessarie due licenze BYOL per raggiungere 384 TIB.
+. Tutti i dischi di un aggregato devono avere le stesse dimensioni.
+
+
+
+
+== Limiti di dischi e tiering in base alle dimensioni delle macchine virtuali
+
+I limiti di capacità variano a seconda delle dimensioni delle macchine virtuali utilizzate e se si utilizza un sistema a nodo singolo o una coppia ha.
+
+Le seguenti note forniscono informazioni dettagliate sui numeri visualizzati nelle tabelle seguenti:
+
+* I limiti dei dischi sono specifici per i dischi che contengono dati utente.
++
+I limiti non includono il disco root, il disco core e la VNVRAM.
+
+* Viene indicata una capacità massima del sistema quando si utilizzano i dischi da soli e quando si utilizzano dischi e tiering cold data per lo storage a oggetti.
+* I sistemi a nodo singolo e ha che utilizzano dischi gestiti hanno un massimo di 32 TIB per disco. Il numero di dischi supportati varia in base alle dimensioni della macchina virtuale.
+* I sistemi HA che utilizzano i blob di pagina hanno un massimo di 8 TIB per blob di pagina. Il numero di dischi supportati varia in base alle dimensioni della macchina virtuale.
+* Il limite 896 TIB basato su disco elencato per i sistemi a nodo singolo con determinate dimensioni delle macchine virtuali è il limite _testato_.
+
+
+
+
+=== Limiti per le licenze basate sulla capacità
+
+I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano un pacchetto di licenze basato sulla capacità. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Scopri le opzioni di licenza di Cloud Volumes ONTAP"^]
+
+
+
+==== Nodo singolo
+
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per nodo | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| DS4_v2 | 29 | 896 TIB | 2 PIB 
+
+
+| DS5_v2 | 61 | 896 TIB | 2 PIB 
+
+
+| DS13_v2 | 29 | 896 TIB | 2 PIB 
+
+
+| DS14_v2 | 61 | 896 TIB | 2 PIB 
+
+
+| DS15_v2 | 61 | 896 TIB | 2 PIB 
+
+
+| E4s_v3 | 5 | 160 TIB | 2 PIB 
+
+
+| E8s_v3 | 13 | 416 TIB | 2 PIB 
+
+
+| E32s_v3 | 29 | 896 TIB | 2 PIB 
+
+
+| E48s_v3 | 29 | 896 TIB | 2 PIB 
+
+
+| E64is_v3 | 29 | 896 TIB | 2 PIB 
+
+
+| E4ds_v4 | 5 | 160 TIB | 2 PIB 
+
+
+| E8ds_v4 | 13 | 416 TIB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 896 TIB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 896 TIB | 2 PIB 
+
+
+| E80ids_v4 | 61 | 896 TIB | 2 PIB 
+
+
+| L8s_v3 | 12 | 384 TIB | 2 PIB 
+
+
+| L16s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L32s_v3 | 28 | 896 TIB | 2 PIB 
+|===
+
+
+==== HA si accoppia in una singola zona di disponibilità con i blob di pagina
+
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| DS4_v2 | 29 | 232 TIB | 2 PIB 
+
+
+| DS5_v2 | 61 | 488 TIB | 2 PIB 
+
+
+| DS13_v2 | 29 | 232 TIB | 2 PIB 
+
+
+| DS14_v2 | 61 | 488 TIB | 2 PIB 
+
+
+| DS15_v2 | 61 | 488 TIB | 2 PIB 
+
+
+| E8s_v3 | 13 | 104 TIB | 2 PIB 
+
+
+| E48s_v3 | 29 | 232 TIB | 2 PIB 
+
+
+| E8ds_v4 | 13 | 104 TIB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 232 TIB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 232 TIB | 2 PIB 
+
+
+| E80ids_v4 | 61 | 488 TIB | 2 PIB 
+|===
+
+
+==== COPPIE HA in una singola zona di disponibilità con dischi gestiti condivisi
+
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| E8ds_v4 | 12 | 384 TIB | 2 PIB 
+
+
+| E32ds_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E80ids_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| L16s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L32s_v3 | 28 | 896 TIB | 2 PIB 
+|===
+
+
+==== COPPIE HA in più zone di disponibilità con dischi gestiti condivisi
+
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| E8ds_v4 | 12 | 384 TIB | 2 PIB 
+
+
+| E32ds_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E80ids_v4 | 28 | 896 TIB | 2 PIB 
+|===
+
+
+=== Limiti per le licenze basate su nodo
+
+I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano licenze basate su nodo, che è il modello di licenza di generazione precedente che consente di concedere in licenza Cloud Volumes ONTAP per nodo. Le licenze basate su nodo sono ancora disponibili per i clienti esistenti.
+
+Se si utilizza una licenza basata su nodo, è possibile acquistare più licenze basate su nodo per un sistema Cloud Volumes ONTAP BYOL per allocare più di 368 TIB di capacità.
+
+Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o una coppia ha è illimitato. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP"^].
+
+
+
+==== Nodo singolo
+
+Il nodo singolo dispone di due opzioni di licenza basate su nodo: PAYGO Premium e BYOL.
+
+.Nodo singolo con PAYGO Premium
+[%collapsible]
+====
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per nodo | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| DS5_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| DS14_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| DS15_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| E32s_v3 | 29 | 368 TIB | 368 TIB 
+
+
+| E48s_v3 | 29 | 368 TIB | 368 TIB 
+
+
+| E64is_v3 | 29 | 368 TIB | 368 TIB 
+
+
+| E32ds_v4 | 29 | 368 TIB | 368 TIB 
+
+
+| E48ds_v4 | 29 | 368 TIB | 368 TIB 
+
+
+| E80ids_v4 | 61 | 368 TIB | 368 TIB 
+|===
+====
+.Nodo singolo con BYOL
+[%collapsible]
+====
+[cols="10,18,18,18,18,18"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per nodo 2+| Capacità massima del sistema con una licenza 2+| Capacità massima del sistema con più licenze 
+
+
+2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
+
+
+| DS4_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| DS13_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| L8s_v2 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+
+
+| E4s_v3 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x ogni licenza 
+
+
+| E8s_v3 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+
+
+| E32s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| E48s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| E64is_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| E4ds_v4 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x ogni licenza 
+
+
+| E8ds_v4 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+
+
+| E32ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| E48ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+
+
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+|===
+====
+
+
+==== Coppie HA
+
+Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di disponibilità multipla. Ciascuna configurazione dispone di due opzioni di licenza basate su nodo: PAYGO Premium e BYOL.
+
+.PAYGO Premium: Coppie HA in una singola zona di disponibilità con aree di pagine
+[%collapsible]
+====
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| DS5_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| DS14_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| DS15_v2 | 61 | 368 TIB | 368 TIB 
+
+
+| E8s_v3 | 13 | 104 TIB | 368 TIB 
+
+
+| E48s_v3 | 29 | 232 TIB | 368 TIB 
+
+
+| E32ds_v4 | 29 | 232 TIB | 368 TIB 
+
+
+| E48ds_v4 | 29 | 232 TIB | 368 TIB 
+
+
+| E80ids_v4 | 61 | 368 TIB | 368 TIB 
+|===
+====
+.PAYGO Premium: Coppie HA in una configurazione a più zone di disponibilità con dischi gestiti condivisi
+[%collapsible]
+====
+[cols="14,20,31,33"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha | Capacità massima del sistema con i soli dischi | Capacità massima del sistema con dischi e tiering dei dati 
+
+
+| E32ds_v4 | 28 | 368 TIB | 368 TIB 
+
+
+| E48ds_v4 | 28 | 368 TIB | 368 TIB 
+
+
+| E80ids_v4 | 28 | 368 TIB | 368 TIB 
+|===
+====
+.BYOL: Coppie HA in una singola zona di disponibilità con blob di pagina
+[%collapsible]
+====
+[cols="10,18,18,18,18,18"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha 2+| Capacità massima del sistema con una licenza 2+| Capacità massima del sistema con più licenze 
+
+
+2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
+
+
+| DS4_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+
+
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+
+
+| DS13_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+
+
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+
+
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+
+
+| E8s_v3 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x ogni licenza 
+
+
+| E48s_v3 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+
+
+| E8ds_v4 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x ogni licenza 
+
+
+| E32ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+
+
+| E48ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+
+
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+|===
+====
+.BYOL: Coppie HA in una configurazione a più zone di disponibilità con dischi gestiti condivisi
+[%collapsible]
+====
+[cols="10,18,18,18,18,18"]
+|===
+| Dimensione della macchina virtuale | Dischi MAX Data per una coppia ha 2+| Capacità massima del sistema con una licenza 2+| Capacità massima del sistema con più licenze 
+
+
+2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
+
+
+| E8ds_v4 | 12 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+
+
+| E32ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+
+
+| E48ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+
+
+| E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+|===
+====
+
+
+== Limiti delle VM di storage
+
+Alcune configurazioni consentono di creare ulteriori VM di storage (SVM) per Cloud Volumes ONTAP.
+
+Questi sono i limiti testati. Sebbene sia teoricamente possibile configurare altre VM di storage, non è supportato.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["Scopri come creare altre VM di storage"^].
+
+[cols="2*"]
+|===
+| Tipo di licenza | Limite di storage VM 
+
+
+| *Freemium*  a| 
+24 VM di storage in totale ^1,2^
+
+
+
+| *PAYGO o BYOL basati sulla capacità* ^3^  a| 
+24 VM di storage in totale ^1,2^
+
+
+
+| *BYOL basato su nodo* ^4^  a| 
+24 VM di storage in totale ^1,2^
+
+
+
+| *PAYGO basato su nodo*  a| 
+* 1 VM di storage per la distribuzione dei dati
+* 1 VM di storage per il disaster recovery
+
+
+|===
+. Queste 24 VM storage possono servire i dati o essere configurate per il disaster recovery (DR).
+. Ciascuna VM di storage può avere fino a tre LIF, due dei quali sono LIF di dati e una LIF di gestione SVM.
+. Per le licenze basate sulla capacità, non sono previsti costi di licenza aggiuntivi per le VM di storage aggiuntive, ma è previsto un costo di capacità minimo di 4 TIB per VM di storage. Ad esempio, se si creano due VM storage e ciascuna dispone di 2 TIB di capacità fornita, verrà addebitato un totale di 8 TIB.
+. Per la BYOL basata su nodo, è necessaria una licenza aggiuntiva per ogni VM di storage _data-serving_ aggiuntiva oltre la prima VM di storage fornita con Cloud Volumes ONTAP per impostazione predefinita. Contattare il proprio account team per ottenere una licenza add-on per le macchine virtuali di storage.
++
+Le VM di storage configurate per il disaster recovery (DR) non richiedono una licenza add-on (sono gratuite), ma contano rispetto al limite delle VM di storage. Ad esempio, se si dispone di 12 VM di storage che servono i dati e di 12 VM di storage configurate per il disaster recovery, si è raggiunto il limite e non è possibile creare altre VM di storage.
+
+
+
+
+
+== Limiti di file e volumi
+
+[cols="22,22,56"]
+|===
+| Storage logico | Parametro | Limite 
+
+
+.2+| *File* | Dimensione massima | 16 TIB 
+
+
+| Massimo per volume | In base alle dimensioni del volume, fino a 2 miliardi 
+
+
+| *Volumi FlexClone* | Profondità del clone gerarchico ^1^ | 499 
+
+
+.3+| *Volumi FlexVol* | Massimo per nodo | 500 
+
+
+| Dimensione minima | 20 MB 
+
+
+| Dimensione massima | 100 TIB 
+
+
+| *Qtree* | Massimo per volume FlexVol | 4,995 
+
+
+| *Copie Snapshot* | Massimo per volume FlexVol | 1,023 
+|===
+. La profondità dei cloni gerarchici è la profondità massima di una gerarchia nidificata di volumi FlexClone che è possibile creare da un singolo volume FlexVol.
+
+
+
+
+== Limiti dello storage iSCSI
+
+[cols="3*"]
+|===
+| Storage iSCSI | Parametro | Limite 
+
+
+.4+| *LUN* | Massimo per nodo | 1,024 
+
+
+| Numero massimo di mappe LUN | 1,024 
+
+
+| Dimensione massima | 16 TIB 
+
+
+| Massimo per volume | 512 
+
+
+| *igroups* | Massimo per nodo | 256 
+
+
+.2+| *Iniziatori* | Massimo per nodo | 512 
+
+
+| Massimo per igroup | 128 
+
+
+| *Sessioni iSCSI* | Massimo per nodo | 1,024 
+
+
+.2+| *LIF* | Massimo per porta | 32 
+
+
+| Massimo per portset | 32 
+
+
+| *Portset* | Massimo per nodo | 256 
+|===

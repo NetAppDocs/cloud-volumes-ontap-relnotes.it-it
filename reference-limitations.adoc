@@ -1,0 +1,101 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
+summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni. 
+---
+= Limitazioni in tutti i provider di cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni.
+
+Le seguenti limitazioni si applicano a Cloud Volumes ONTAP in tutti i provider cloud: AWS, Azure e Google Cloud.
+
+
+
+== Numero massimo di operazioni di replica simultanee
+
+Il numero massimo di trasferimenti simultanei di SnapMirror o SnapVault per Cloud Volumes ONTAP è 100 per nodo, indipendentemente dal tipo di istanza o di macchina.
+
+
+
+== Le snapshot dei provider di cloud non devono essere utilizzate per i piani di backup e ripristino
+
+Non dovresti utilizzare le snapshot del tuo cloud provider come parte del tuo piano di backup e recovery per i dati Cloud Volumes ONTAP. Per eseguire il backup e il ripristino dei dati ospitati su Cloud Volumes ONTAP, è necessario utilizzare sempre copie Snapshot di ONTAP o soluzioni di backup di terze parti.
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Scopri come utilizzare il backup e ripristino BlueXP per eseguire il backup e il ripristino dei dati ONTAP"^].
+
+
+NOTE: I punti di coerenza ONTAP nel file system WAFL determinano la coerenza dei dati. Solo ONTAP può interrompere il file system WAFL per eseguire un backup coerente con il crash.
+
+
+
+== Cloud Volumes ONTAP supporta istanze di macchine virtuali riservate e on-demand
+
+Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale riservata o on-demand dal tuo cloud provider. Altri tipi di istanze di macchine virtuali non sono supportati.
+
+
+
+== Le soluzioni di gestione automatica delle risorse applicative non devono essere utilizzate
+
+Le soluzioni di gestione automatica delle risorse applicative non devono gestire i sistemi Cloud Volumes ONTAP. In questo modo, si può modificare una configurazione non supportata. Ad esempio, la soluzione potrebbe modificare Cloud Volumes ONTAP in un tipo di istanza di VM non supportato.
+
+
+
+== Gli aggiornamenti software devono essere completati da BlueXP
+
+Gli aggiornamenti di Cloud Volumes ONTAP devono essere completati da BlueXP. Non aggiornare Cloud Volumes ONTAP utilizzando Gestione di sistema o l'interfaccia CLI. In questo modo si può influire sulla stabilità del sistema.
+
+
+
+== L'implementazione di Cloud Volumes ONTAP non deve essere modificata dalla console del provider di cloud
+
+Le modifiche apportate a una configurazione Cloud Volumes ONTAP dalla console del provider di servizi cloud comportano una configurazione non supportata. Qualsiasi modifica apportata alle risorse Cloud Volumes ONTAP create e gestite da BlueXP può influire sulla stabilità del sistema e sulla capacità di gestione del sistema da parte di BlueXP.
+
+
+
+== I dischi e gli aggregati devono essere gestiti da BlueXP
+
+Tutti i dischi e gli aggregati devono essere creati ed eliminati direttamente da BlueXP. Non eseguire queste azioni da un altro tool di gestione. In questo modo si può influire sulla stabilità del sistema, ostacolare la possibilità di aggiungere dischi in futuro e potenzialmente generare tariffe ridondanti per i provider di cloud.
+
+
+
+== Limitazione delle licenze SnapManager
+
+Le licenze SnapManager per server sono supportate con Cloud Volumes ONTAP. Le licenze per sistema storage (suite SnapManager) non sono supportate.
+
+
+
+== Funzionalità ONTAP non supportate
+
+Le seguenti funzioni non sono supportate con Cloud Volumes ONTAP:
+
+* Deduplica inline a livello di aggregato
+* Deduplica in background a livello aggregato
+* Anti-ransomware
+* Centro di manutenzione dei dischi
+* Pulizia dei dischi
+* Mirroring FabricPool
+* Fibre Channel (FC)
+* Pool di flash
+* Volumi infiniti
+* Gruppi di interfacce
+* Failover LIF Intranode
+* MetroCluster
+* Verifica multi-admin
++
+L'attivazione della verifica multi-admin su Cloud Volumes ONTAP comporterà una configurazione non supportata.
+
+* RAID4, RAID-DP, RAID-TEC (RAID0 supportato)
+* Service Processor
+* Conformità SnapLock e modalità aziendali (solo cloud WORM supportato)
+* SnapMirror sincrono
+* VLAN
+
