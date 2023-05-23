@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Configurazioni supportate in AWS | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Configurazioni supportate in AWS | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+	<meta property="og:description" content="In AWS sono supportate diverse configurazioni Cloud Volumes ONTAP." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="In AWS sono supportate diverse configurazioni Cloud Volumes ONTAP.">
+  <meta name="keywords" content=" ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package"><!-- Icons -->
+  <link rel="icon" href="/it-it/cloud-volumes-ontap-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/cloud-volumes-ontap-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/cloud-volumes-ontap-relnotes/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/cloud-volumes-ontap-relnotes/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/cloud-volumes-ontap-relnotes/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-relnotes/reference-configs-aws.html" />
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-relnotes/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/cloud-volumes-ontap-relnotes/js/na-search.js'></script><script src='/it-it/cloud-volumes-ontap-relnotes/js/na-pagenav.js'></script><script src='/it-it/cloud-volumes-ontap-relnotes/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-relnotes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-relnotes/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/cloud-volumes-ontap-relnotes/js/na-utility.js'></script> -->
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/clouddocs.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/cloud-volumes-ontap-relnotes/js/toc.js'></script> -->
+  <!-- <script src='/it-it/cloud-volumes-ontap-relnotes/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/cloud-volumes-ontap-relnotes"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/custom-dropdown.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/FileSaver.min.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-relnotes/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/cloud-volumes-ontap-relnotes/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.13.0">
+    <label>Versione</label>
+    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.13.0</span>
+    <img src="/it-it/cloud-volumes-ontap-relnotes/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/it-it/cloud-volumes-ontap-relnotes/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.13.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9121-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9120-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9111-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9110-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9101-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9100-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-991-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-990-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-98-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.8</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-97-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.7</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-96-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.6</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.5</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-94-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.4</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-93-relnotes/reference-configs-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud ONTAP</span><span class="version"> 9.3</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html&page-title=Configurazioni supportate in AWS" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-volumes-ontap-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/blob/main/reference-configs-aws.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-volumes-ontap-relnotes/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/cloud-volumes-ontap-relnotes/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/cloud-volumes-ontap-relnotes/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-relnotes/reference-configs-aws.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/cloud-volumes-ontap-relnotes/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Note_sulla_versione_di_Cloud_Volumes_ONTAP_9_13_0.pdf" >
+          <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-volumes-ontap-relnotes/pdfs/sidebar/Configurazioni_supportate.pdf" 
+            
+          >
+            <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>
+            Configurazioni supportate
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-volumes-ontap-relnotes/pdfs/sidebar/Limiti_di_storage.pdf" 
+            
+          >
+            <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>
+            Limiti di storage
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-volumes-ontap-relnotes/pdfs/sidebar/Limitazioni_note.pdf" 
+            
+          >
+            <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>
+            Limitazioni note
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-volumes-ontap-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio home"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/index.html">
+        Note di rilascio home
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica sulle licenze"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/concept-licensing.html">
+        Panoramica sulle licenze
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurazioni supportate"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Configurazioni supportate</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="2#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-configs-aws.html">
+        AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-configs-azure.html">
+        Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-configs-gcp.html">
+        Google Cloud
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limiti di storage"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Limiti di storage</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limits-aws.html">
+        AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limits-azure.html">
+        Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limits-gcp.html">
+        Google Cloud
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Problemi noti"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-issues.html">
+        Problemi noti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni note"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Limitazioni note</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni comuni"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limitations.html">
+        Limitazioni comuni
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni in AWS"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limitations-aws.html">
+        Limitazioni in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni in Azure"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limitations-azure.html">
+        Limitazioni in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni di Google Cloud"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-limitations-gcp.html">
+        Limitazioni di Google Cloud
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Integrazioni dei cloud provider"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/reference-provider-integrations.html">
+        Integrazioni dei cloud provider
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-relnotes/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/cloud-volumes-ontap-relnotes/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.13.0&nbsp;release&nbsp;notes</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Configurazioni supportate in AWS</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 21:36:51 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>In AWS sono supportate diverse configurazioni Cloud Volumes ONTAP.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="numero-di-nodi-supportati">Numero di nodi supportati</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP è disponibile in AWS come sistema a nodo singolo e come coppia di nodi ad alta disponibilità (ha) per la fault tolerance e le operazioni senza interruzioni.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;aggiornamento di un sistema a nodo singolo a una coppia ha non è supportato. Se si desidera passare da un sistema a nodo singolo a una coppia ha, è necessario implementare un nuovo sistema e replicare i dati dal sistema esistente al nuovo sistema.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="storage-supportato">Storage supportato</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP supporta diversi tipi di dischi EBS e lo storage a oggetti S3 per il tiering dei dati. La capacità massima dello storage è determinata dalla licenza scelta.</p>
+</div>
+<div class="sect2">
+<h3 id="supporto-dello-storage-tramite-licenza">Supporto dello storage tramite licenza</h3>
+<div class="paragraph">
+<p>Ogni licenza supporta una diversa capacità massima del sistema. La capacità massima del sistema include lo storage basato su disco e lo storage a oggetti utilizzato per il tiering dei dati. NetApp non supporta il superamento di questo limite.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Freemium</th>
+<th class="tableblock halign-left valign-top">ESPLORAZIONE DI PAYGO</th>
+<th class="tableblock halign-left valign-top">Standard PAYGO</th>
+<th class="tableblock halign-left valign-top">PAYGO Premium</th>
+<th class="tableblock halign-left valign-top">BYOL basato su nodo</th>
+<th class="tableblock halign-left valign-top">Licenza basata sulla capacità</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Capacità massima del sistema (dischi + storage a oggetti) <sup>1</sup></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500 GiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 TIB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 TIB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368 TIB <sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368 TIB per licenza <sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PIB <sup>2</sup></p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Per una coppia ha, il limite di capacità è per l&#8217;intera coppia ha. Non è per nodo. Ad esempio, se si utilizza la licenza Premium, è possibile avere fino a 368 TIB di capacità tra entrambi i nodi.</p>
+</li>
+<li>
+<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Per informazioni sui limiti dei dischi, fare riferimento a. <a href="reference-limits-aws.html">"limiti di storage"</a>.</p>
+</li>
+<li>
+<p>Le prestazioni di scrittura migliorate sono abilitate quando si utilizzano SSD con tutte le configurazioni Cloud Volumes ONTAP, ad eccezione DI PAYGO Explore.</p>
+</li>
+<li>
+<p>Si sconsiglia di eseguire il tiering dei dati sullo storage a oggetti quando si utilizzano HDD ottimizzati per il throughput (st1).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dimensioni-dei-dischi-supportate">Dimensioni dei dischi supportate</h3>
+<div class="paragraph">
+<p>In AWS, un aggregato può contenere fino a 6 dischi delle stesse dimensioni. Tuttavia, se si dispone di una configurazione che supporta la funzione Amazon EBS Elastic Volumes, un aggregato può contenere fino a 8 dischi. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html" target="_blank" rel="noopener">"Scopri di più sul supporto per volumi elastici"</a></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SSD per impieghi generali (gp3 e gp2)</th>
+<th class="tableblock halign-left valign-top">SSD IOPS con provisioning (io1)</th>
+<th class="tableblock halign-left valign-top">HDD ottimizzati per il throughput (st1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>100 GiB</p>
+</li>
+<li>
+<p>500 GiB</p>
+</li>
+<li>
+<p>1 TIB</p>
+</li>
+<li>
+<p>2 TIB</p>
+</li>
+<li>
+<p>4 TIB</p>
+</li>
+<li>
+<p>6 TIB</p>
+</li>
+<li>
+<p>8 TIB</p>
+</li>
+<li>
+<p>16 TIB</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>100 GiB</p>
+</li>
+<li>
+<p>500 GiB</p>
+</li>
+<li>
+<p>1 TIB</p>
+</li>
+<li>
+<p>2 TIB</p>
+</li>
+<li>
+<p>4 TIB</p>
+</li>
+<li>
+<p>6 TIB</p>
+</li>
+<li>
+<p>8 TIB</p>
+</li>
+<li>
+<p>16 TIB</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>500 GiB</p>
+</li>
+<li>
+<p>1 TIB</p>
+</li>
+<li>
+<p>2 TIB</p>
+</li>
+<li>
+<p>4 TIB</p>
+</li>
+<li>
+<p>6 TIB</p>
+</li>
+<li>
+<p>8 TIB</p>
+</li>
+<li>
+<p>16 TIB</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="calcolo-ec2-supportato">Calcolo EC2 supportato</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ogni licenza Cloud Volumes ONTAP supporta diversi tipi di istanze EC2. Per comodità, la tabella seguente mostra la vCPU, la RAM e la larghezza di banda per ciascun tipo di istanza supportato. <a href="https://aws.amazon.com/ec2/instance-types/" target="_blank" rel="noopener">"Fare riferimento ad AWS per i dettagli più recenti e completi sui tipi di istanze EC2"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AWS documentati per ciascun tipo di istanza. Questi limiti non si allineano completamente con ciò che Cloud Volumes ONTAP è in grado di offrire. Per le prestazioni previste, fare riferimento a. <a href="https://www.netapp.com/us/media/tr-4383.pdf" target="_blank" rel="noopener">"Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni"</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Licenza</th>
+<th class="tableblock halign-left valign-top">Istanza supportata</th>
+<th class="tableblock halign-left valign-top">VCPU</th>
+<th class="tableblock halign-left valign-top">RAM</th>
+<th class="tableblock halign-left valign-top">Flash cache <sup>1</sup></th>
+<th class="tableblock halign-left valign-top">Larghezza di banda della rete (Gbps)</th>
+<th class="tableblock halign-left valign-top">Larghezza di banda EBS (Mbps)</th>
+<th class="tableblock halign-left valign-top">Elevata velocità di scrittura <sup>2</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Explore o qualsiasi altra licenza</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5.xlange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato (solo nodo singolo)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><strong>Standard o qualsiasi altra licenza</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">r5.xlange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato (solo nodo singolo)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5a.2xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 2,880</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5.2xgrande</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="22"><p class="tableblock"><strong>Premium o qualsiasi altra licenza</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5n.2xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">r5.2xgrande</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">r5d.2xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5d.4xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,570</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5.4xgrande</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.4xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fino a 25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5d.8xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6,800</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">r5.8xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6,800</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5.9xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5d.9xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5n.9xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">96</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5a.12xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">96</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5.18xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">144</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5d.18xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">144</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5d.12xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.12xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5n.18xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5a.16xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5.16xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13,600</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">r5.12xlarge <sup>3</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9,500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m6id.32xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Alcuni tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come <em>Flash cache</em>. Flash cache accelera l&#8217;accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html" target="_blank" rel="noopener">"Scopri di più su Flash cache"</a>.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP supporta un&#8217;elevata velocità di scrittura con la maggior parte dei tipi di istanze quando si utilizza una coppia ha. L&#8217;elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html" target="_blank" rel="noopener">"Scopri di più sulla scelta della velocità di scrittura"</a>.</p>
+</li>
+<li>
+<p>Il tipo di istanza r5.12xlarge presenta un limite noto per la supportabilità. Se un nodo si riavvia inaspettatamente a causa di un panico, il sistema potrebbe non raccogliere i file principali utilizzati per la risoluzione dei problemi e causare il problema. Il cliente accetta i rischi e i termini di supporto limitati e si assume la responsabilità del supporto in caso di questa condizione. Questa limitazione riguarda le coppie ha e ha recentemente implementate, aggiornate dal 9.8. La limitazione non riguarda i sistemi a nodo singolo appena implementati.</p>
+</li>
+<li>
+<p>Sebbene questi tipi di istanze EC2 supportino più di 64 vCPU, Cloud Volumes ONTAP supporta solo fino a 64 vCPU.</p>
+</li>
+<li>
+<p>Quando si sceglie un tipo di istanza EC2, è possibile specificare se si tratta di un&#8217;istanza condivisa o dedicata.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP può essere eseguito su un&#8217;istanza di EC2 riservata o on-demand. Le soluzioni che utilizzano altri tipi di istanze non sono supportate.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="regioni-supportate">Regioni supportate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Per il supporto della regione AWS, vedere <a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Cloud Volumes Global Regions"</a>.</p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-relnotes/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/cloud-volumes-ontap-relnotes/js/tabbed-blocks.js'></script>
+    <script src='/it-it/cloud-volumes-ontap-relnotes/js/sidebar.js'></script>
+  </body></html>
