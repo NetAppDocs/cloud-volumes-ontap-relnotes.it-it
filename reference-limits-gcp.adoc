@@ -24,7 +24,7 @@ La capacità massima del sistema per un sistema Cloud Volumes ONTAP è determina
 
 NetApp non supporta il superamento del limite di capacità del sistema. Se si raggiunge il limite di capacità concesso in licenza, BlueXP visualizza il messaggio Action Required (azione richiesta) e non consente più di aggiungere dischi aggiuntivi.
 
-Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per ulteriori informazioni, fare riferimento ai limiti dei dischi riportati di seguito.
+Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per ulteriori informazioni, fare riferimento ai limiti dei dischi riportati di seguito.
 
 [cols="25,75"]
 |===
@@ -123,7 +123,7 @@ Alcune configurazioni consentono di creare ulteriori VM di storage (SVM) per Clo
 
 Questi sono i limiti testati. Sebbene sia teoricamente possibile configurare altre VM di storage, non è supportato.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Scopri come creare altre VM di storage"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Scopri come creare altre VM di storage"^].
 
 [cols="2*"]
 |===
@@ -241,4 +241,4 @@ Le VM di storage configurate per il disaster recovery (DR) non richiedono una li
 
 Dopo il riavvio di un nodo, il partner deve sincronizzare i dati prima di poter restituire lo storage. Il tempo necessario per risincronizzare i dati dipende dalla quantità di dati scritti dai client mentre il nodo era inattivo e dalla velocità di scrittura dei dati durante il periodo di giveback.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["Scopri come funziona lo storage in una coppia Cloud Volumes ONTAP ha eseguita in Google Cloud"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-google-cloud.html["Scopri come funziona lo storage in una coppia Cloud Volumes ONTAP ha eseguita in Google Cloud"^].

@@ -34,4 +34,4 @@ La ricarica si basa sulle dimensioni della capacità impegnata per una o più co
 
 Il precedente modello di licenza per nodo rimane disponibile per i clienti che hanno già acquistato una licenza o che hanno un abbonamento al marketplace attivo.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Scopri di più su queste opzioni di licenza"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Scopri di più su queste opzioni di licenza"^]

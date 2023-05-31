@@ -83,7 +83,7 @@ L'aggiornamento di un sistema a nodo singolo a una coppia ha non è supportato. 
 |===
 Note:
 
-. I limiti dei dischi possono impedire di raggiungere il limite massimo di capacità del sistema utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^].
+. I limiti dei dischi possono impedire di raggiungere il limite massimo di capacità del sistema utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^].
 +
 link:reference-limits-gcp.html["Scopri di più sui limiti dei dischi in Google Cloud"].
 
@@ -103,7 +103,7 @@ Se si dispone di un sistema esistente in esecuzione su questo tipo di macchina, 
 ** n2-standard-48
 ** n2-standard-64
 +
-È possibile attivare _Flash cache_ e un'elevata velocità di scrittura durante l'implementazione di un tipo di istanza idoneo. Per abilitare l'unità di trasmissione massima di 8,896 byte, è necessario scegliere VPC-1, VPC-2 o VPC-3 per l'implementazione. La MTU più elevata consente un throughput di rete più elevato. Per ulteriori informazioni sull'avvio di una di queste implementazioni, vedere https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lancio di una coppia ha in Google Cloud"].
+È possibile attivare _Flash cache_ e un'elevata velocità di scrittura durante l'implementazione di un tipo di istanza idoneo. Per abilitare l'unità di trasmissione massima di 8,896 byte, è necessario scegliere VPC-1, VPC-2 o VPC-3 per l'implementazione. La MTU più elevata consente un throughput di rete più elevato. Per ulteriori informazioni sull'avvio di una di queste implementazioni, vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lancio di una coppia ha in Google Cloud"].
 
 +
 
