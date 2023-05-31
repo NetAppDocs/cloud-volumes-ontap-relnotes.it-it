@@ -598,7 +598,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-volumes-ontap-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/bluexp-family/"><img src="/it-it/cloud-volumes-ontap-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -774,7 +774,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+          <a href="https://docs.netapp.com/it-it/bluexp-family/">BlueXP</a>
         </li>
         
 
@@ -810,7 +810,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 21:36:51 +0000">05/23/2023</time>
+    <time datetime="2023-05-31 16:19:31 +0000">05/31/2023</time>
     
   
 
@@ -888,7 +888,7 @@
 <p>Per una coppia ha, il limite di capacità è per l&#8217;intera coppia ha. Non è per nodo. Ad esempio, se si utilizza la licenza Premium, è possibile avere fino a 368 TIB di capacità tra entrambi i nodi.</p>
 </li>
 <li>
-<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Per informazioni sui limiti dei dischi, fare riferimento a. <a href="reference-limits-aws.html">"limiti di storage"</a>.</p>
+<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Per informazioni sui limiti dei dischi, fare riferimento a. <a href="reference-limits-aws.html">"limiti di storage"</a>.</p>
 </li>
 <li>
 <p>Le prestazioni di scrittura migliorate sono abilitate quando si utilizzano SSD con tutte le configurazioni Cloud Volumes ONTAP, ad eccezione DI PAYGO Explore.</p>
@@ -902,7 +902,7 @@
 <div class="sect2">
 <h3 id="dimensioni-dei-dischi-supportate">Dimensioni dei dischi supportate</h3>
 <div class="paragraph">
-<p>In AWS, un aggregato può contenere fino a 6 dischi delle stesse dimensioni. Tuttavia, se si dispone di una configurazione che supporta la funzione Amazon EBS Elastic Volumes, un aggregato può contenere fino a 8 dischi. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html" target="_blank" rel="noopener">"Scopri di più sul supporto per volumi elastici"</a></p>
+<p>In AWS, un aggregato può contenere fino a 6 dischi delle stesse dimensioni. Tuttavia, se si dispone di una configurazione che supporta la funzione Amazon EBS Elastic Volumes, un aggregato può contenere fino a 8 dischi. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html" target="_blank" rel="noopener">"Scopri di più sul supporto per volumi elastici"</a></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1281,10 +1281,10 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Alcuni tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come <em>Flash cache</em>. Flash cache accelera l&#8217;accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html" target="_blank" rel="noopener">"Scopri di più su Flash cache"</a>.</p>
+<p>Alcuni tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come <em>Flash cache</em>. Flash cache accelera l&#8217;accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html" target="_blank" rel="noopener">"Scopri di più su Flash cache"</a>.</p>
 </li>
 <li>
-<p>Cloud Volumes ONTAP supporta un&#8217;elevata velocità di scrittura con la maggior parte dei tipi di istanze quando si utilizza una coppia ha. L&#8217;elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html" target="_blank" rel="noopener">"Scopri di più sulla scelta della velocità di scrittura"</a>.</p>
+<p>Cloud Volumes ONTAP supporta un&#8217;elevata velocità di scrittura con la maggior parte dei tipi di istanze quando si utilizza una coppia ha. L&#8217;elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html" target="_blank" rel="noopener">"Scopri di più sulla scelta della velocità di scrittura"</a>.</p>
 </li>
 <li>
 <p>Il tipo di istanza r5.12xlarge presenta un limite noto per la supportabilità. Se un nodo si riavvia inaspettatamente a causa di un panico, il sistema potrebbe non raccogliere i file principali utilizzati per la risoluzione dei problemi e causare il problema. Il cliente accetta i rischi e i termini di supporto limitati e si assume la responsabilità del supporto in caso di questa condizione. Questa limitazione riguarda le coppie ha e ha recentemente implementate, aggiornate dal 9.8. La limitazione non riguarda i sistemi a nodo singolo appena implementati.</p>
