@@ -178,9 +178,9 @@
   <!-- Start Page Toolbar -->
   
   <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
-  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.13.0">
+  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.13.1">
     <label>Versione</label>
-    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.13.0</span>
+    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.13.1</span>
     <img src="/it-it/cloud-volumes-ontap-relnotes/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
     <img src="/it-it/cloud-volumes-ontap-relnotes/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
   </div>
@@ -188,6 +188,13 @@
   <ul class="custom-dropdown-menu"><li>
       
       <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-configs-azure.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.13.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9130-relnotes/reference-configs-azure.html" target="_self">
         <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.13.0</span></span>
       </a>
                      
@@ -457,7 +464,7 @@
         
         
         
-        <a target="_blank" href="/it-it/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Note_sulla_versione_di_Cloud_Volumes_ONTAP_9_13_0.pdf" >
+        <a target="_blank" href="/it-it/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Note_sulla_versione_di_Cloud_Volumes_ONTAP_9_13_1.pdf" >
           <img src="/it-it/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
 
 
@@ -779,7 +786,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/it-it/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.13.0&nbsp;release&nbsp;notes</a>
+          <a href="/it-it/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.13.1&nbsp;release&nbsp;notes</a>
         </li>
 
       </ul>
@@ -810,7 +817,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-31 16:19:31 +0000">05/31/2023</time>
+    <time datetime="2023-06-26 17:31:49 +0000">06/26/2023</time>
     
   
 
@@ -930,6 +937,12 @@
 <li>
 <p>L32s_v3 <sup>2</sup></p>
 </li>
+<li>
+<p>L48s_v3 <sup>2</sup></p>
+</li>
+<li>
+<p>L64s_v3 <sup>2</sup></p>
+</li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
@@ -1048,6 +1061,12 @@
 <li>
 <p>L32s_v3 <sup>2</sup></p>
 </li>
+<li>
+<p>L48s_v3 <sup>2</sup></p>
+</li>
+<li>
+<p>L64s_v3 <sup>2</sup></p>
+</li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
@@ -1105,6 +1124,12 @@
 </li>
 <li>
 <p>L32s_v3 <sup>2</sup></p>
+</li>
+<li>
+<p>L48s_v3 <sup>2</sup></p>
+</li>
+<li>
+<p>L64s_v3 <sup>2</sup></p>
 </li>
 </ul>
 </div></div></td>
@@ -1151,220 +1176,10 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="coppie-ha">Coppie HA</h3>
+<h3 id="coppie-ha-con-dischi-gestiti-condivisi">COPPIE HA con dischi gestiti condivisi</h3>
 <div class="paragraph">
 <p>È possibile scegliere tra le seguenti configurazioni quando si implementa Cloud Volumes ONTAP come coppia ha in Azure.</p>
 </div>
-<div class="sect3">
-<h4 id="coppie-ha-con-il-blob-di-pagina">COPPIE HA con il blob di pagina</h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top">Freemium</th>
-<th class="tableblock halign-left valign-top">Standard PAYGO</th>
-<th class="tableblock halign-left valign-top">PAYGO Premium</th>
-<th class="tableblock halign-left valign-top">BYOL basato su nodo</th>
-<th class="tableblock halign-left valign-top">Licenza basata sulla capacità</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Capacità massima del sistema (dischi + storage a oggetti)</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">500 GiB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10 TIB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368 TIB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">368 TIB per licenza</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 PIB</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tipi di macchine virtuali supportati</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>DS4_v2</p>
-</li>
-<li>
-<p>DS5_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS13_v2</p>
-</li>
-<li>
-<p>DS14_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS15_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>E8s_v3</p>
-</li>
-<li>
-<p>E48s_v3 <sup>1</sup></p>
-</li>
-<li>
-<p>E8ds_v4 <sup>3</sup></p>
-</li>
-<li>
-<p>E32ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E48ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E80ids_v4 <sup>1,2,3</sup></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>DS4_v2</p>
-</li>
-<li>
-<p>DS13_v2</p>
-</li>
-<li>
-<p>E8s_v3</p>
-</li>
-<li>
-<p>E8ds_v4 <sup>3</sup></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>DS5_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS14_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS15_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>E48s_v3 <sup>1</sup></p>
-</li>
-<li>
-<p>E32ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E48ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E80ids_v4 <sup>1,2,3</sup></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>DS4_v2</p>
-</li>
-<li>
-<p>DS5_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS13_v2</p>
-</li>
-<li>
-<p>DS14_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS15_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>E8s_v3</p>
-</li>
-<li>
-<p>E48s_v3 <sup>1</sup></p>
-</li>
-<li>
-<p>E8ds_v4 <sup>3</sup></p>
-</li>
-<li>
-<p>E32ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E48ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E80ids_v4 <sup>1,2,3</sup></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>DS4_v2</p>
-</li>
-<li>
-<p>DS5_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS13_v2</p>
-</li>
-<li>
-<p>DS14_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>DS15_v2 <sup>1</sup></p>
-</li>
-<li>
-<p>E8s_v3</p>
-</li>
-<li>
-<p>E48s_v3 <sup>1</sup></p>
-</li>
-<li>
-<p>E8ds_v4 <sup>3</sup></p>
-</li>
-<li>
-<p>E32ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E48ds_v4 <sup>1,3</sup></p>
-</li>
-<li>
-<p>E80ids_v4 <sup>1,2,3</sup></p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tipi di dischi supportati</p></th>
-<td class="tableblock halign-left valign-top" colspan="5"><p class="tableblock">Aree delle pagine</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Note:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Cloud Volumes ONTAP supporta un&#8217;elevata velocità di scrittura con questi tipi di macchine virtuali quando si utilizza una coppia ha. È possibile abilitare un&#8217;elevata velocità di scrittura da BlueXP durante l&#8217;implementazione o in qualsiasi momento. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html" target="_blank" rel="noopener">"Scopri di più sulla scelta della velocità di scrittura"</a>.</p>
-</li>
-<li>
-<p>Questa macchina virtuale è consigliata solo quando è necessario il controllo della manutenzione di Azure. Non è consigliato per altri casi di utilizzo a causa del prezzo più elevato.</p>
-</li>
-<li>
-<p>Queste macchine virtuali sono supportate solo nelle implementazioni di Cloud Volumes ONTAP 9.11.1 o versioni precedenti. Con questi tipi di macchine virtuali è possibile aggiornare un&#8217;implementazione di page blob esistente da Cloud Volumes ONTAP 9.11.1 a 9.12.1. Non è possibile eseguire nuove implementazioni di blob di pagina con Cloud Volumes ONTAP 9.12.1 o versioni successive.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="coppie-ha-con-dischi-gestiti-condivisi">COPPIE HA con dischi gestiti condivisi</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -1410,10 +1225,10 @@
 <p>E80ids_v4 <sup>1,2,4</sup></p>
 </li>
 <li>
-<p>L16s_v3 <sup>1,3,5</sup></p>
+<p>L16s_v3 <sup>1,4,5</sup></p>
 </li>
 <li>
-<p>L32s_v3 <sup>1,3,5</sup></p>
+<p>L32s_v3 <sup>1,4,5</sup></p>
 </li>
 </ul>
 </div></div></td>
@@ -1436,32 +1251,10 @@
 <p>E80ids_v4 <sup>1,2,4</sup></p>
 </li>
 <li>
-<p>L16s_v3 <sup>1,3,5</sup></p>
+<p>L16s_v3 <sup>1,4,5</sup></p>
 </li>
 <li>
-<p>L32s_v3 <sup>1,3,5</sup></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>E8ds_v4 <sup>4</sup></p>
-</li>
-<li>
-<p>E32ds_v4 <sup>1,4</sup></p>
-</li>
-<li>
-<p>E48ds_v4 <sup>1,4</sup></p>
-</li>
-<li>
-<p>E80ids_v4 <sup>1,2,4</sup></p>
-</li>
-<li>
-<p>L16s_v3 <sup>1,3,5</sup></p>
-</li>
-<li>
-<p>L32s_v3 <sup>1,3,5</sup></p>
+<p>L32s_v3 <sup>1,4,5</sup></p>
 </li>
 </ul>
 </div></div></td>
@@ -1480,10 +1273,32 @@
 <p>E80ids_v4 <sup>1,2,4</sup></p>
 </li>
 <li>
-<p>L16s_v3 <sup>1,3,5</sup></p>
+<p>L16s_v3 <sup>1,4,5</sup></p>
 </li>
 <li>
-<p>L32s_v3 <sup>1,3,5</sup></p>
+<p>L32s_v3 <sup>1,4,5</sup></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>E8ds_v4 <sup>4</sup></p>
+</li>
+<li>
+<p>E32ds_v4 <sup>1,4</sup></p>
+</li>
+<li>
+<p>E48ds_v4 <sup>1,4</sup></p>
+</li>
+<li>
+<p>E80ids_v4 <sup>1,2,4</sup></p>
+</li>
+<li>
+<p>L16s_v3 <sup>1,4,5</sup></p>
+</li>
+<li>
+<p>L32s_v3 <sup>1,4,5</sup></p>
 </li>
 </ul>
 </div></div></td>
@@ -1515,7 +1330,6 @@
 <p>Questo tipo di macchina virtuale include lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come <em>Flash cache</em>. Flash cache accelera l&#8217;accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html" target="_blank" rel="noopener">"Scopri di più"</a>.</p>
 </li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1632,7 +1446,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="coppie-ha-2">Coppie HA</h3>
+<h3 id="coppie-ha">Coppie HA</h3>
 <div class="paragraph">
 <p>Le coppie HA utilizzano dischi gestiti. (Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).</p>
 </div>
