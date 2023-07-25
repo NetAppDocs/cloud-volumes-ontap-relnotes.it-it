@@ -79,7 +79,7 @@ L'aggiornamento di un sistema a nodo singolo a una coppia ha non è supportato. 
 
 
 
-| Tipi di disco supportati ^4^ 6+| Dischi persistenti zonali (SSD, bilanciati e standard) 
+| Tipi di dischi supportati 6+| Dischi persistenti bilanciati ^4^, dischi persistenti delle performance (SSD) ^4^ e dischi persistenti standard (HDD). 
 |===
 Note:
 
@@ -92,7 +92,7 @@ link:reference-limits-gcp.html["Scopri di più sui limiti dei dischi in Google C
 +
 Se si dispone di un sistema esistente in esecuzione su questo tipo di macchina, è possibile continuare a utilizzarlo, ma si consiglia di passare al tipo di macchina n2-standard-4.
 
-. Le prestazioni di scrittura migliorate sono abilitate quando si utilizzano gli SSD.
+. Le migliori prestazioni di scrittura sono abilitate quando si utilizzano dischi persistenti bilanciati e dischi persistenti delle performance (SSD).
 . L'interfaccia BlueXP mostra un tipo di macchina aggiuntivo supportato per Standard e BYOL: n1-highmem-4. Tuttavia, questo tipo di macchina non è destinato agli ambienti di produzione. L'abbiamo resa disponibile solo per un ambiente di laboratorio specifico.
 . Per il supporto dell'area geografica di Google Cloud Platform, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
 . Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale riservata o on-demand dal tuo cloud provider. Le soluzioni che utilizzano altri tipi di istanze di macchine virtuali non sono supportate.
