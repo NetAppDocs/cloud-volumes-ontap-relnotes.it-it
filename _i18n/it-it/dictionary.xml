@@ -684,4 +684,6 @@
   <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">La versione candidata 1 di Cloud Volumes ONTAP 9.13.1 è ora disponibile in AWS, Azure e Google Cloud.</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Dischi persistenti bilanciati ^4^, dischi persistenti delle performance (SSD) ^4^ e dischi persistenti standard (HDD).</block>
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">Le migliori prestazioni di scrittura sono abilitate quando si utilizzano dischi persistenti bilanciati e dischi persistenti delle performance (SSD).</block>
+  <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA (26 luglio 2023)</block>
+  <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">La versione per la disponibilità generale di Cloud Volumes ONTAP 9.13.1 è ora disponibile in AWS, Azure e Google Cloud.</block>
 </blocks>
