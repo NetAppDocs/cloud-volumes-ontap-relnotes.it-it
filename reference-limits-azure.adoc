@@ -163,6 +163,12 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 
 | L32s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L48s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L64s_v3 | 28 | 896 TIB | 2 PIB 
 |===
 
 
@@ -230,6 +236,12 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 
 | L32s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L48s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L64s_v3 | 28 | 896 TIB | 2 PIB 
 |===
 
 
@@ -250,6 +262,12 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| L48s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L64s_v3 | 28 | 896 TIB | 2 PIB 
 |===
 
 
