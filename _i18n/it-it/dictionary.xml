@@ -26,10 +26,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Direttiva sulla privacy</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.</block>
-  <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">Avviso per il mediatore Cloud Volumes ONTAP 9.12.1 in AWS</block>
-  <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
-  <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Avviso per il mediatore Cloud Volumes ONTAP 9.12.1 in Google Cloud</block>
-  <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">Avviso per ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP offre diverse opzioni di licenza che consentono di scegliere un modello di consumo che soddisfi le tue esigenze.</block>
@@ -637,9 +633,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud ONTAP</block>
   <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
   <block id="d75c8a72363ede5ded8979310421b255" category="paragraph">Se si sfrutta<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> All'interno del VPC in cui si sta implementando Cloud Volumes ONTAP, è necessario implementare i record DNS che inoltrano il traffico al richiesto<block ref="e6b10532507a1a1747789a49cf51c637" category="inline-link-rx"></block>.</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Per informazioni sui limiti dei dischi, fare riferimento a. <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
@@ -665,23 +658,12 @@
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">Questo tipo di macchina virtuale include lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">L'elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo. È possibile abilitare un'elevata velocità di scrittura da BlueXP durante l'implementazione o in qualsiasi momento.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con questi tipi di macchine virtuali quando si utilizza una coppia ha. È possibile abilitare un'elevata velocità di scrittura da BlueXP durante l'implementazione o in qualsiasi momento.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="7e250845f86eeaaaf4e55296f483f4ee" category="summary">Cloud Volumes ONTAP 9.13.1 include un nuovo miglioramento.</block>
-  <block id="59d68d1abaff04001d7f138b569d66a1" category="doc">Novità di Cloud Volumes ONTAP 9.13.1</block>
-  <block id="0775e0f9165c68236ce80a5eeaf622d2" category="paragraph">Cloud Volumes ONTAP 9.13.1 include nuovi miglioramenti.</block>
-  <block id="9c8c9e4dac5a2be78e81d66cbffd75af" category="section-title">9.13.1 RC1 (26 giugno 2023)</block>
-  <block id="9a8603c7a44b001d1d10919fc28a94cc" category="paragraph">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.13.1 dalle versioni 9.12.1 e 9.13.0. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
-  <block id="15a36f3b57148762c2209c3b7df4f648" category="paragraph">BlueXP Connector deve eseguire la versione 3.9.26 o successiva per implementare nuovi sistemi Cloud Volumes ONTAP 9.13.1 e aggiornare i sistemi esistenti alla versione 9.13.1.</block>
-  <block id="b07f6144410a8635e8ae505b186322a5" category="summary">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.13.1.</block>
-  <block id="a69b1618b78e74242413945e92315e51" category="doc">Note sulla versione di Cloud Volumes ONTAP 9.13.1</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3 ^2^</block>
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1,4,5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1,4,5^</block>
-  <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">La versione candidata 1 di Cloud Volumes ONTAP 9.13.1 è ora disponibile in AWS, Azure e Google Cloud.</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Dischi persistenti bilanciati ^4^, dischi persistenti delle performance (SSD) ^4^ e dischi persistenti standard (HDD).</block>
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">Le migliori prestazioni di scrittura sono abilitate quando si utilizzano dischi persistenti bilanciati e dischi persistenti delle performance (SSD).</block>
-  <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA (26 luglio 2023)</block>
-  <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">La versione per la disponibilità generale di Cloud Volumes ONTAP 9.13.1 è ora disponibile in AWS, Azure e Google Cloud.</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -695,4 +677,21 @@
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1,4,5^</block>
   <block id="c7316b16841dc002d14d45c38a750287" category="cell">L48s_v3</block>
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="cell">L64s_v3</block>
+  <block id="17ed68bac4a851f70f23adb17408c559" category="summary">Cloud Volumes ONTAP 9.14.0 include un nuovo miglioramento.</block>
+  <block id="2f9a9e2e9643d34c7f7f1936f399ae83" category="doc">Novità di Cloud Volumes ONTAP 9.14.0</block>
+  <block id="831c51dbf72b967842c4f8c35b68775a" category="paragraph">Cloud Volumes ONTAP 9.14.0 include nuovi miglioramenti.</block>
+  <block id="054019ec227eca9ca771ad54dc96be1d" category="section-title">9.14.0:00 (29 settembre 2023)</block>
+  <block id="23fccc87959a2c4683bbaf760d6391f9" category="paragraph">La release General Availability (GA) di Cloud Volumes ONTAP 9.14.0 è ora disponibile in AWS, Azure e Google Cloud. Questa versione include le seguenti nuove funzioni e miglioramenti.</block>
+  <block id="e8cc4fb6a76ec45c4753f6fa889f1a55" category="section-title">Segregazione del traffico SnapMirror in Azure</block>
+  <block id="7c1a4429723a32e5741845cf6c26964d" category="paragraph">Ora puoi separare il traffico di replica SnapMirror dai dati e dal traffico di gestione. Questa nuova funzionalità consente di segregare il traffico di replica SnapMirror sfruttando una subnet aggiuntiva non indirizzabile alla subnet esistente utilizzata per i dati e il traffico di gestione.</block>
+  <block id="fc24325d1a2e9e1bafd6f254f53818cc" category="inline-link-macro">Isolamento del traffico SnapMirror in Azure</block>
+  <block id="af7ed382ad038fd00a8e8cd85149ee8f" category="paragraph">Scopri di più su come <block ref="c2e17ab17ee4e8b3c5063ff09339d01c" category="inline-link-macro-rx"></block>.</block>
+  <block id="de12dfc5ec75a2eca151fb8bd975bf68" category="paragraph">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.14.0 dalla versione 9.13.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
+  <block id="cb6034e9fe897f10028a1cffdb218a93" category="paragraph">Il connettore BlueXP deve eseguire la versione 3.9.27 o successiva per implementare nuovi sistemi Cloud Volumes ONTAP 9.14.0 e per aggiornare i sistemi esistenti alla versione 9.14.0.</block>
+  <block id="83855cac4cd9fe299365bd61fece6bb1" category="inline-link-macro">Avviso per il mediatore Cloud Volumes ONTAP 9.14.0 in AWS</block>
+  <block id="d3c10a06f4967c50eb334c137f0fea04" category="list-text"><block ref="d3c10a06f4967c50eb334c137f0fea04" category="inline-link-macro-rx"></block></block>
+  <block id="372c9b488802576d68e99603944c4566" category="inline-link-macro">Avviso per Cloud Volumes ONTAP 9.14.0 mediator in Google Cloud</block>
+  <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
+  <block id="373d3eec6a8460edd6d29008332349e5" category="summary">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.14.0.</block>
+  <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Note sulla versione di Cloud Volumes ONTAP 9.14.0</block>
 </blocks>
