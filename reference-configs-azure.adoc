@@ -271,9 +271,11 @@ I sistemi a nodo singolo utilizzano dischi gestiti Azure. Sono supportate le seg
 
 === Coppie HA
 
-Le coppie HA utilizzano dischi gestiti. (Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).
+Le coppie HA utilizzano i dischi gestiti di Azure. Sono supportati i seguenti tipi e dimensioni di dischi.
 
-Sono supportate le seguenti dimensioni dei dischi:
+(Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).
+
+*SSD Premium*
 
 * 500 GiB
 * 1 TIB

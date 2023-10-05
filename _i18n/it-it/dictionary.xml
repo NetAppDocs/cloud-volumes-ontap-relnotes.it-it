@@ -608,8 +608,6 @@
   <block id="be08eab34bc0f034d51f82767686b3b7" category="cell">SSD standard</block>
   <block id="ef80fe66906aa69c663bc559d808a821" category="cell">HDD standard</block>
   <block id="d556a98bff3e1e758e87dd72b174feca" category="list-text">32 TIB</block>
-  <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">Le coppie HA utilizzano dischi gestiti. (Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).</block>
-  <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">Sono supportate le seguenti dimensioni dei dischi:</block>
   <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TIB (solo dischi gestiti)</block>
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TIB (solo dischi gestiti)</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Note di rilascio home</block>
@@ -694,4 +692,7 @@
   <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
   <block id="373d3eec6a8460edd6d29008332349e5" category="summary">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.14.0.</block>
   <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Note sulla versione di Cloud Volumes ONTAP 9.14.0</block>
+  <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">Le coppie HA utilizzano i dischi gestiti di Azure. Sono supportati i seguenti tipi e dimensioni di dischi.</block>
+  <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">(Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).</block>
+  <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">*SSD Premium*</block>
 </blocks>
