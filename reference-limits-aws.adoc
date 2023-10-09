@@ -43,7 +43,7 @@ Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il lim
 | PAYGO Premium | 368 TIB 
 
 
-| Licenza basata su nodo | 368 TIB per licenza 
+| Licenza basata su nodo | 2 PIB (richiede più licenze) 
 
 
 | Licenza basata sulla capacità | 2 PIB 
@@ -162,11 +162,9 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano licenze basate su nodo, che è il modello di licenza di generazione precedente che consente di concedere in licenza Cloud Volumes ONTAP per nodo. Le licenze basate su nodo sono ancora disponibili per i clienti esistenti.
 
-* Se si utilizza una licenza basata su nodo, è possibile acquistare più licenze basate su nodo per un sistema Cloud Volumes ONTAP BYOL per allocare più di 368 TIB di capacità.
-+
-Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o una coppia ha è illimitato. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP"^].
+Puoi acquistare più licenze basate su nodi per un sistema Cloud Volumes ONTAP BYOL a nodo singolo o coppia ha, per allocare più di 368 TiB di capacità, fino al limite massimo di capacità di sistema testato e supportato di 2 PIB. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP"^]. Sebbene Cloud Volumes ONTAP supporti fino alla capacità massima testata e supportata di sistema di 2 PIB, il superamento del limite di 2 PIB comporta una configurazione di sistema non supportata.
 
-
+Il cloud segreto e le regioni del cloud top secret AWS supportano l'acquisto di licenze basate su nodi multipli a partire da Cloud Volumes ONTAP 9.12.1.
 
 
 
@@ -202,14 +200,14 @@ Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o
 2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
 
 
-| istanze c5, m5 e r5 | 21 ^1^ | 336 TIB | 368 TIB | 336 TIB | 368 TIB x ogni licenza 
+| istanze c5, m5 e r5 | 21 ^1^ | 336 TIB | 368 TIB | 336 TIB | 2 PIB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xlarge
 
-| 19 ^2^ | 304 TIB | 368 TIB | 304 TIB | 368 TIB x ogni licenza 
+| 19 ^2^ | 304 TIB | 368 TIB | 304 TIB | 2 PIB 
 |===
 . 21 dischi dati sono il limite per _nuove_ implementazioni di Cloud Volumes ONTAP. Se si aggiorna un sistema creato con la versione 9.7 o precedente, il sistema continua a supportare 22 dischi. Un disco dati in meno è supportato sui nuovi sistemi che utilizzano questi tipi di istanze grazie all'aggiunta di un disco core a partire dalla release 9.8.
 . Questo tipo di istanza dispone di più dischi NVMe locali rispetto ad altri tipi di istanza, il che significa che è supportato un numero inferiore di dischi dati.
@@ -249,14 +247,14 @@ Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o
 2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
 
 
-| istanze c5, m5 e r5 | 18 ^1^ | 288 TIB | 368 TIB | 288 TIB | 368 TIB x ogni licenza 
+| istanze c5, m5 e r5 | 18 ^1^ | 288 TIB | 368 TIB | 288 TIB | 2 PIB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xlarge
 
-| 16 ^2^ | 256 TIB | 368 TIB | 256 TIB | 368 TIB x ogni licenza 
+| 16 ^2^ | 256 TIB | 368 TIB | 256 TIB | 2 PIB 
 |===
 . 18 dischi dati sono il limite per _nuove_ implementazioni di Cloud Volumes ONTAP. Se si aggiorna un sistema creato con la versione 9.7 o precedente, il sistema continua a supportare 19 dischi. Un disco dati in meno è supportato sui nuovi sistemi che utilizzano questi tipi di istanze grazie all'aggiunta di un disco core a partire dalla release 9.8.
 . Questo tipo di istanza dispone di più dischi NVMe locali rispetto ad altri tipi di istanza, il che significa che è supportato un numero inferiore di dischi dati.

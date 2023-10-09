@@ -262,7 +262,6 @@
   <block id="65bde6c49a21a362fe1a467deb20eaa0" category="section-title">COPPIE HA in più zone di disponibilità con dischi gestiti condivisi</block>
   <block id="6c3b49ddb811c2d88edee86163680009" category="section-title">Limiti per le licenze basate su nodo</block>
   <block id="d017aa906544a3348ee35d75ebb10b72" category="paragraph">I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano licenze basate su nodo, che è il modello di licenza di generazione precedente che consente di concedere in licenza Cloud Volumes ONTAP per nodo. Le licenze basate su nodo sono ancora disponibili per i clienti esistenti.</block>
-  <block id="52960fb5a2829740ddef9c61b6015d59" category="paragraph">Se si utilizza una licenza basata su nodo, è possibile acquistare più licenze basate su nodo per un sistema Cloud Volumes ONTAP BYOL per allocare più di 368 TIB di capacità.</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP</block>
   <block id="0a55127e06de49321e40b57dcf267213" category="paragraph">Il nodo singolo dispone di due opzioni di licenza basate su nodo: PAYGO Premium e BYOL.</block>
   <block id="fff4bb20e652c529e2e22e76e56ed9b5" category="example-title">Nodo singolo con PAYGO Premium</block>
@@ -271,7 +270,6 @@
   <block id="cabc996760a00c42a2b15b388054d050" category="cell">Capacità massima del sistema con più licenze</block>
   <block id="bb49543449782c0f1b87b3ef8f49a6be" category="cell">*Dischi da soli*</block>
   <block id="e3185eb0708df4883935910ebf26f8db" category="cell">*Dischi + tiering dei dati*</block>
-  <block id="f94f9afeacfc431720c782db2e1d8809" category="cell">368 TIB x ogni licenza</block>
   <block id="84581eec82fbf62be31e4721312910b0" category="cell">L8s_v2</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">Coppie HA</block>
   <block id="9de019e3dc7194dd111a2bc0cff84058" category="paragraph">Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di disponibilità multipla. Ciascuna configurazione dispone di due opzioni di licenza basate su nodo: PAYGO Premium e BYOL.</block>
@@ -638,7 +636,6 @@
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">Alcuni tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
   <block id="ce4956d12fe22f1b1243720ce22651e0" category="list-text">Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con la maggior parte dei tipi di istanze quando si utilizza una coppia ha. L'elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano un pacchetto di licenze basato sulla capacità.<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
-  <block id="05c9b06fc32318d0689c553219a9d496" category="paragraph">Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o una coppia ha è illimitato. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>.</block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
   <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">I limiti dei dischi possono impedire di raggiungere il limite massimo di capacità del sistema utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
@@ -695,4 +692,7 @@
   <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">Le coppie HA utilizzano i dischi gestiti di Azure. Sono supportati i seguenti tipi e dimensioni di dischi.</block>
   <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">(Le pagine blob sono supportate con le coppie ha implementate prima della release 9.12.1).</block>
   <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">*SSD Premium*</block>
+  <block id="fd164e9cb2bc1ac5405cabfe451663f7" category="cell">2 PIB (richiede più licenze)</block>
+  <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="paragraph">Puoi acquistare più licenze basate su nodi per un sistema Cloud Volumes ONTAP BYOL a nodo singolo o coppia ha, per allocare più di 368 TiB di capacità, fino al limite massimo di capacità di sistema testato e supportato di 2 PIB. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>. Sebbene Cloud Volumes ONTAP supporti fino alla capacità massima testata e supportata di sistema di 2 PIB, il superamento del limite di 2 PIB comporta una configurazione di sistema non supportata.</block>
+  <block id="de9d6749570efc87e63811b5947fc250" category="paragraph">Il cloud segreto e le regioni del cloud top secret AWS supportano l'acquisto di licenze basate su nodi multipli a partire da Cloud Volumes ONTAP 9.12.1.</block>
 </blocks>

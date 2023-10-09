@@ -41,7 +41,7 @@ NetApp non supporta il superamento del limite di capacità del sistema. Se si ra
 | PAYGO Premium | 368 TIB 
 
 
-| Licenza basata su nodo | 368 TIB per licenza 
+| Licenza basata su nodo | 2 PIB (richiede più licenze) 
 
 
 | Licenza basata sulla capacità | 2 PIB 
@@ -275,9 +275,7 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utilizzano licenze basate su nodo, che è il modello di licenza di generazione precedente che consente di concedere in licenza Cloud Volumes ONTAP per nodo. Le licenze basate su nodo sono ancora disponibili per i clienti esistenti.
 
-Se si utilizza una licenza basata su nodo, è possibile acquistare più licenze basate su nodo per un sistema Cloud Volumes ONTAP BYOL per allocare più di 368 TIB di capacità.
-
-Il numero di licenze che è possibile acquistare per un sistema a nodo singolo o una coppia ha è illimitato. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP"^].
+Puoi acquistare più licenze basate su nodi per un sistema Cloud Volumes ONTAP BYOL a nodo singolo o coppia ha, per allocare più di 368 TiB di capacità, fino al limite massimo di capacità di sistema testato e supportato di 2 PIB. Tenere presente che i limiti dei dischi possono impedire di raggiungere il limite di capacità utilizzando solo i dischi. È possibile superare il limite di dischi di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Scopri come aggiungere ulteriori licenze di sistema a Cloud Volumes ONTAP"^]. Sebbene Cloud Volumes ONTAP supporti fino alla capacità massima testata e supportata di sistema di 2 PIB, il superamento del limite di 2 PIB comporta una configurazione di sistema non supportata.
 
 
 
@@ -331,52 +329,52 @@ Il nodo singolo dispone di due opzioni di licenza basate su nodo: PAYGO Premium 
 2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
 
 
-| DS4_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| DS4_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS5_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS13_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| DS13_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS14_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS15_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| L8s_v2 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+| L8s_v2 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E4s_v3 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x ogni licenza 
+| E4s_v3 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
 
 
-| E8s_v3 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+| E8s_v3 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E32s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E32s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E48s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E48s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E64is_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E64is_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E4ds_v4 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x ogni licenza 
+| E4ds_v4 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
 
 
-| E8ds_v4 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x ogni licenza 
+| E8ds_v4 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E32ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E48ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x ogni licenza 
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 |===
 ====
 
@@ -445,37 +443,37 @@ Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di dis
 2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
 
 
-| DS4_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+| DS4_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| DS5_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| DS13_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+| DS13_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| DS14_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| DS15_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| E8s_v3 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x ogni licenza 
+| E8s_v3 | 13 | 104 TIB | 368 TIB | 104 TIB | 2 PIB 
 
 
-| E48s_v3 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+| E48s_v3 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E8ds_v4 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x ogni licenza 
+| E8ds_v4 | 13 | 104 TIB | 368 TIB | 104 TIB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+| E32ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x ogni licenza 
+| E48ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E80ids_v4 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x ogni licenza 
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 |===
 ====
 .BYOL: Coppie HA in una configurazione a più zone di disponibilità con dischi gestiti condivisi
@@ -489,16 +487,16 @@ Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di dis
 2+|  | *Dischi da soli* | *Dischi + tiering dei dati* | *Dischi da soli* | *Dischi + tiering dei dati* 
 
 
-| E8ds_v4 | 12 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+| E8ds_v4 | 12 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E32ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+| E32ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E48ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+| E48ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x ogni licenza 
+| E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 |===
 ====
 

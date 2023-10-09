@@ -43,7 +43,7 @@ Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il lim
 | PAYGO Premium | 368 TB 
 
 
-| Licenza basata su nodo | 368 TB per licenza 
+| Licenza basata su nodo | 2 PIB (richiede più licenze) 
 
 
 | Licenza basata sulla capacità | 2 PIB 
