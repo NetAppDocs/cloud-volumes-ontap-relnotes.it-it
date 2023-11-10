@@ -706,4 +706,8 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">Aree delle pagine</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con questi tipi di macchine virtuali quando si utilizza una coppia ha. È possibile abilitare un'elevata velocità di scrittura da BlueXP durante l'implementazione o in qualsiasi momento.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">Queste macchine virtuali sono supportate solo nelle implementazioni di Cloud Volumes ONTAP 9.11.1 o versioni precedenti. Con questi tipi di macchine virtuali è possibile aggiornare un'implementazione di page blob esistente da Cloud Volumes ONTAP 9.11.1 a 9.12.1. Non è possibile eseguire nuove implementazioni di blob di pagina con Cloud Volumes ONTAP 9.12.1 o versioni successive.</block>
+  <block id="146025031e411527ef6984b6118e640f" category="section-title">9.14.0 P1:00 (10 novembre 2023)</block>
+  <block id="fc8e613001b912e569b768ab8df19f0a" category="paragraph">La patch 9.14.0 P1 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider se si dispone di un connettore con versione 3.9.27 o successiva. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Visualizza l'elenco dei bug corretti nella patch P1</block>
+  <block id="f9297806abdec62aa803240bcecddc81" category="paragraph"><block ref="f2b4b5c16e7f6ca0207f7436ffc92a53" category="inline-link-macro-rx"></block> (Accesso al NetApp Support Site richiesto).</block>
 </blocks>
