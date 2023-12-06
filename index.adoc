@@ -2,10 +2,10 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.0. 
-summary: Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.14.0. 
+lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1. 
+summary: Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.14.1. 
 ---
-= Note sulla versione di Cloud Volumes ONTAP 9.14.0
+= Note sulla versione di Cloud Volumes ONTAP 9.14.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
