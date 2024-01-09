@@ -32,10 +32,10 @@ Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, �
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | Freemium | ESPLORAZIONE DI PAYGO | Standard PAYGO | PAYGO Premium | BYOL basato su nodo | Licenza basata sulla capacità 
+|  | Freemium | Licenza basata sulla capacità | ESPLORAZIONE DI PAYGO | Standard PAYGO | PAYGO Premium | BYOL basato su nodo 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 TIB ^1^ | 10 TIB | 368 TIB | 368 TIB per licenza | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 TIB ^1^ | 10 TIB | 368 TIB | 368 TIB per licenza 
 
 
 | Tipi di macchine virtuali supportati  a| 
@@ -61,28 +61,6 @@ Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, �
 * L64s_v3 ^2^
 
  a| 
-* E4s_v3
-* E4ds_v4 ^3^
-
- a| 
-* DS4_v2
-* DS13_v2
-* E8s_v3
-* E8ds_v4 ^3^
-* L8s_v3 ^2^
-
- a| 
-* DS5_v2
-* DS14_v2
-* DS15_v2
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
-* E32ds_v4 ^3^
-* E48ds_v4 ^3^
-* E80ids_v4 ^3^
-
- a| 
 * DS4_v2
 * DS5_v2
 * DS13_v2
@@ -103,6 +81,28 @@ Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, �
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
+
+ a| 
+* E4s_v3
+* E4ds_v4 ^3^
+
+ a| 
+* DS4_v2
+* DS13_v2
+* E8s_v3
+* E8ds_v4 ^3^
+* L8s_v3 ^2^
+
+ a| 
+* DS5_v2
+* DS14_v2
+* DS15_v2
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
 
  a| 
 * DS4_v2
@@ -161,10 +161,10 @@ Al contrario, se Cloud Volumes ONTAP è stato implementato utilizzando qualsiasi
 
 [cols="h,d,d,d,d,d"]
 |===
-|  | Freemium | Standard PAYGO | PAYGO Premium | BYOL basato su nodo | Licenza basata sulla capacità 
+|  | Freemium | Licenza basata sulla capacità | Standard PAYGO | PAYGO Premium | BYOL basato su nodo 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 10 TIB | 368 TIB | 368 TIB per licenza | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 10 TIB | 368 TIB | 368 TIB per licenza 
 
 
 | Tipi di macchine virtuali supportati  a| 
@@ -182,28 +182,28 @@ Al contrario, se Cloud Volumes ONTAP è stato implementato utilizzando qualsiasi
 
  a| 
 * DS4_v2
-* DS13_v2
-* E8s_v3
-* E8ds_v4 ^3^
-
- a| 
 * DS5_v2 ^1^
+* DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+* E8s_v3
 * E48s_v3 ^1^
+* E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
 
  a| 
 * DS4_v2
-* DS5_v2 ^1^
 * DS13_v2
+* E8s_v3
+* E8ds_v4 ^3^
+
+ a| 
+* DS5_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
-* E8s_v3
 * E48s_v3 ^1^
-* E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
@@ -241,10 +241,10 @@ Note:
 
 [cols="h,d,d,d,d,d"]
 |===
-|  | Freemium | Standard PAYGO | PAYGO Premium | BYOL basato su nodo | Licenza basata sulla capacità 
+|  | Freemium | Licenza basata sulla capacità | Standard PAYGO | PAYGO Premium | BYOL basato su nodo 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 10 TIB | 368 TIB | 368 TIB per licenza | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 10 TIB | 368 TIB | 368 TIB per licenza 
 
 
 | Tipi di macchine virtuali supportati  a| 
@@ -252,10 +252,20 @@ Note:
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
-* L16s_v3 ^1,3,5^
-* L32s_v3 ^1,3,5^
-* L48s_v3 ^1,3,5^
-* L64s_v3 ^1,3,5^
+* L16s_v3 ^1,4,5^
+* L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
+
+ a| 
+* E8ds_v4 ^4^
+* E32ds_v4 ^1,4^
+* E48ds_v4 ^1,4^
+* E80ids_v4 ^1,2,4^
+* L16s_v3 ^1,4,5^
+* L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
  a| 
 * E8ds_v4 ^4^
@@ -264,30 +274,20 @@ Note:
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
-* L16s_v3 ^1,3,5^
-* L32s_v3 ^1,3,5^
-* L48s_v3 ^1,3,5^
-* L64s_v3 ^1,3,5^
+* L16s_v3 ^1,4,5^
+* L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
  a| 
 * E8ds_v4 ^4^
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
-* L16s_v3 ^1,3,5^
-* L32s_v3 ^1,3,5^
-* L48s_v3 ^1,3,5^
-* L64s_v3 ^1,3,5^
-
- a| 
-* E8ds_v4 ^4^
-* E32ds_v4 ^1,4^
-* E48ds_v4 ^1,4^
-* E80ids_v4 ^1,2,4^
-* L16s_v3 ^1,3,5^
-* L32s_v3 ^1,3,5^
-* L48s_v3 ^1,3,5^
-* L64s_v3 ^1,3,5^
+* L16s_v3 ^1,4,5^
+* L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
 
 
@@ -299,7 +299,7 @@ Note:
 . Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con questi tipi di macchine virtuali quando si utilizza una coppia ha. È possibile abilitare un'elevata velocità di scrittura da BlueXP durante l'implementazione o in qualsiasi momento. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Scopri di più sulla scelta della velocità di scrittura"^].
 . Questa macchina virtuale è consigliata solo quando è necessario il controllo della manutenzione di Azure. Non è consigliato per altri casi di utilizzo a causa del prezzo più elevato.
 . Questi tipi di macchine virtuali sono supportati solo per coppie ha in una singola configurazione di zona di disponibilità eseguita su dischi gestiti condivisi.
-. Questi tipi di macchine virtuali sono supportati per coppie ha in una singola zona di disponibilità e configurazioni di più zone di disponibilità eseguite su dischi gestiti condivisi.
+. Questi tipi di macchine virtuali sono supportati per coppie ha in una singola zona di disponibilità e configurazioni di più zone di disponibilità eseguite su dischi gestiti condivisi. Per i tipi VM LS_v3, il supporto di zone di disponibilità multiple inizia dalla versione 9.13.1 di ONTAP.
 . Questo tipo di macchina virtuale include lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Scopri di più"^].
 
 
