@@ -309,7 +309,6 @@
   <block id="cee631121c2ec9232f3a2f028ad5c89b" category="cell">500</block>
   <block id="9dba50d3a2c2f26daddbf9d144c49772" category="cell">Dimensione minima</block>
   <block id="e2fca4ed20d01d1eda8a934cf81cb194" category="cell">20 MB</block>
-  <block id="87338ad799bddd85c6298bb9270dc27f" category="cell">100 TIB</block>
   <block id="f870c45bb6c4b8bad8f13c8dc3439f98" category="cell">*Qtree*</block>
   <block id="8032f0290a7c4e00a6da3a195523a94e" category="cell">Massimo per volume FlexVol</block>
   <block id="38de34e4b49b8adfeb2c678818915204" category="cell">4,995</block>
@@ -431,7 +430,6 @@
   <block id="8e612b6b306f120390f4c3bd234f9ce8" category="cell">*BYOL basato su nodo* ^3^</block>
   <block id="41a0b1e6c6d31716c7d7b603ce6a4936" category="section-title">Limiti di storage logico</block>
   <block id="302f571fec3e23b2236f116e51e46721" category="cell">Profondità del clone gerarchico ^12^</block>
-  <block id="309524b9e1ef1d7d7d905c7cb1d358e9" category="cell">100 TB</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Scopri come funziona lo storage in una coppia Cloud Volumes ONTAP ha eseguita in Google Cloud</block>
   <block id="fc5c1a5c8028c4da4d0b0de1a9b1df3d" category="doc">Limitazioni in tutti i provider di cloud</block>
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">Le seguenti limitazioni si applicano a Cloud Volumes ONTAP in tutti i provider cloud: AWS, Azure e Google Cloud.</block>
@@ -620,14 +618,6 @@
   <block id="5313a9ac102424f63dd4d76f5280130e" category="sidebar">Limitazioni in AWS</block>
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Limitazioni in Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitazioni di Google Cloud</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Inizia subito</block>
-  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
-  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">Limitazioni</block>
-  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
   <block id="d75c8a72363ede5ded8979310421b255" category="paragraph">Se si sfrutta<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> All'interno del VPC in cui si sta implementando Cloud Volumes ONTAP, è necessario implementare i record DNS che inoltrano il traffico al richiesto<block ref="e6b10532507a1a1747789a49cf51c637" category="inline-link-rx"></block>.</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Per informazioni sui limiti dei dischi, fare riferimento a. <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
@@ -702,4 +692,12 @@
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 ^1,4,5^</block>
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1,4,5^</block>
   <block id="885a1d815cf042f25bd0893361642b6e" category="list-text">Questi tipi di macchine virtuali sono supportati per coppie ha in una singola zona di disponibilità e configurazioni di più zone di disponibilità eseguite su dischi gestiti condivisi. Per i tipi VM LS_v3, il supporto di zone di disponibilità multiple inizia dalla versione 9.13.1 di ONTAP.</block>
+  <block id="64063abe39aac990beb215f4e4df9f92" category="cell">Dimensione massima ^2^</block>
+  <block id="d0bb632fcdb31cf3c729c1c59f826d4f" category="cell">128 TB</block>
+  <block id="95f8ab07e6196c13df81b9123cb42b19" category="cell">Dimensione massima ^3^</block>
+  <block id="4dd4655034851cefb46869bef690cc22" category="cell">300 TIB</block>
+  <block id="ae809759e1518d5c4c2019b9c03f15a1" category="list-text">A partire da ONTAP 9.12.1P2, il limite è di 128 TB. In ONTAP 9.11.1 e nelle versioni precedenti, il limite è di 16 TB.</block>
+  <block id="44693df7930e7e6d7bb4f466625bc372" category="list-text">La creazione di volumi FlexVol fino alla dimensione massima di 300 TiB è supportata utilizzando i seguenti strumenti e le versioni minime:</block>
+  <block id="5680c249ee040de9c43f982996ed2a24" category="list-text">System Manager e la CLI di ONTAP a partire da Cloud Volumes ONTAP 9.12.1 P2 e 9.13.0 P2</block>
+  <block id="68c68c70121e1d9364223bb9fded83b0" category="list-text">BlueXP a partire da Cloud Volumes ONTAP 9.13.1</block>
 </blocks>

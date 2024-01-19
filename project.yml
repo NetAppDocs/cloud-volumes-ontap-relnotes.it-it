@@ -85,46 +85,6 @@ sidebar:
     url: "/reference-provider-integrations.html"
   - title: Note legali
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: Inizia subito
-    links:
-    - title: Novità
-      url: reference-new.html
-    - title: Panoramica sulle licenze
-      url: concept-licensing.html
-  - title: Amazon Web Services
-    links:
-    - title: Configurazioni supportate
-      url: reference-configs-aws.html
-    - title: Limiti di storage
-      url: reference-limits-aws.html
-    - title: Limitazioni
-      url: reference-limitations-aws.html
-  - title: Google Cloud
-    links:
-    - title: Configurazioni supportate
-      url: reference-configs-gcp.html
-    - title: Limiti di storage
-      url: reference-limits-gcp.html
-    - title: Limitazioni
-      url: reference-limitations-gcp.html
-  - title: Microsoft Azure
-    links:
-    - title: Configurazioni supportate
-      url: reference-configs-azure.html
-    - title: Limiti di storage
-      url: reference-limits-azure.html
-    - title: Limitazioni
-      url: reference-limitations-azure.html
-  - title: Blog e community
-    links:
-    - title: Community NetApp
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Blog BlueXP
-      url: https://cloud.netapp.com/blog
-    - title: Webinar sul cloud
-      url: https://cloud.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family

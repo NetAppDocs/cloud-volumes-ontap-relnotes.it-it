@@ -414,7 +414,7 @@ Poiché richiede un indirizzo IP privato, limita il numero di VM storage aggiunt
 | Storage logico | Parametro | Limite 
 
 
-.2+| *File* | Dimensione massima | 16 TIB 
+.2+| *File* | Dimensione massima ^2^ | 128 TB 
 
 
 | Massimo per volume | In base alle dimensioni del volume, fino a 2 miliardi 
@@ -429,7 +429,7 @@ Poiché richiede un indirizzo IP privato, limita il numero di VM storage aggiunt
 | Dimensione minima | 20 MB 
 
 
-| Dimensione massima | 100 TIB 
+| Dimensione massima ^3^ | 300 TIB 
 
 
 | *Qtree* | Massimo per volume FlexVol | 4,995 
@@ -438,6 +438,13 @@ Poiché richiede un indirizzo IP privato, limita il numero di VM storage aggiunt
 | *Copie Snapshot* | Massimo per volume FlexVol | 1,023 
 |===
 . La profondità dei cloni gerarchici è la profondità massima di una gerarchia nidificata di volumi FlexClone che è possibile creare da un singolo volume FlexVol.
+. A partire da ONTAP 9.12.1P2, il limite è di 128 TB. In ONTAP 9.11.1 e nelle versioni precedenti, il limite è di 16 TB.
+. La creazione di volumi FlexVol fino alla dimensione massima di 300 TiB è supportata utilizzando i seguenti strumenti e le versioni minime:
++
+** System Manager e la CLI di ONTAP a partire da Cloud Volumes ONTAP 9.12.1 P2 e 9.13.0 P2
+** BlueXP a partire da Cloud Volumes ONTAP 9.13.1
+
+
 
 
 
