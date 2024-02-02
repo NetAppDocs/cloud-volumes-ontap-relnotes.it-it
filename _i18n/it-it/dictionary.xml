@@ -711,4 +711,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">Questi tipi di macchine virtuali sono supportati per coppie ha in una singola zona di disponibilità e configurazioni di più zone di disponibilità eseguite su dischi gestiti condivisi. Per i tipi VM LS_v3, il supporto di zone di disponibilità multiple inizia dalla versione 9.13.1 di ONTAP. Per i tipi di macchine virtuali EDS_v5, il supporto di zone di disponibilità multiple inizia dalla versione 9.14.1 RC1 di ONTAP.</block>
+  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
+  <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
 </blocks>

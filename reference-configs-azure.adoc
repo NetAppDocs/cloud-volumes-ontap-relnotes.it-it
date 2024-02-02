@@ -113,10 +113,10 @@ Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, Ã
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
-* E20ds_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
+* E20ds_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 
  a| 
 * DS4_v2
@@ -136,10 +136,10 @@ Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, Ã
 * E80ids_v4 ^3^
 * E4ds_v5
 * E8ds_v5
-* E20ds_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
+* E20ds_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -231,10 +231,10 @@ Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nu
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
-* E20ds_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
+* E20ds_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
  a| 
 * DS4_v2
@@ -250,10 +250,10 @@ Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nu
 * E80ids_v4 ^1,2,3^
 * E4ds_v5
 * E8ds_v5
-* E20ds_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
+* E20ds_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
 
 
