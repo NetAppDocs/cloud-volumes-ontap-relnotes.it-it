@@ -156,6 +156,24 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 | E80ids_v4 | 61 | 896 TIB | 2 PIB 
 
 
+| E4ds_v5 | 5 | 160 TIB | 2 PIB 
+
+
+| E8ds_v5 | 13 | 416 TIB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
 | L8s_v3 | 12 | 384 TIB | 2 PIB 
 
 
@@ -232,6 +250,21 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
 
 
+| E8ds_v5 | 12 | 384 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
 | L16s_v3 | 28 | 896 TIB | 2 PIB 
 
 
@@ -262,6 +295,21 @@ I seguenti limiti di disco si applicano ai sistemi Cloud Volumes ONTAP che utili
 
 
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E8ds_v5 | 12 | 384 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
 
 
 | L16s_v3 | 28 | 896 TIB | 2 PIB 
@@ -322,6 +370,18 @@ Il nodo singolo dispone di due opzioni di licenza basate su nodo: PAYGO Premium 
 
 
 | E80ids_v4 | 61 | 368 TIB | 368 TIB 
+
+
+| E20ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TIB | 2 PIB 
 |===
 ====
 .Nodo singolo con BYOL
@@ -381,6 +441,24 @@ Il nodo singolo dispone di due opzioni di licenza basate su nodo: PAYGO Premium 
 
 
 | E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E4ds_v5 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
+
+
+| E8ds_v5 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 |===
 ====
 
@@ -436,6 +514,18 @@ Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di dis
 
 
 | E80ids_v4 | 28 | 368 TIB | 368 TIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
 |===
 ====
 .BYOL: Coppie HA in una singola zona di disponibilità con blob di pagina
@@ -503,6 +593,21 @@ Le coppie HA hanno due tipi di configurazione: Il blob di pagina e l'area di dis
 
 
 | E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E8ds_v5 | 12 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 |===
 ====
 
