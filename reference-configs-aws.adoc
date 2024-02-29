@@ -38,10 +38,10 @@ Ogni licenza supporta una diversa capacità massima del sistema. La capacità ma
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | Freemium | ESPLORAZIONE DI PAYGO | Standard PAYGO | PAYGO Premium | BYOL basato su nodo | Licenza basata sulla capacità 
+|  | Freemium | Licenza basata sulla capacità | ESPLORAZIONE DI PAYGO | Standard PAYGO | PAYGO Premium | BYOL basato su nodo 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) ^1^ | 500 GiB | 2 TIB | 10 TIB | 368 TIB ^2^ | 368 TIB per licenza ^2^ | 2 PIB ^2^ 
+| Capacità massima del sistema (dischi + storage a oggetti) ^1^ | 500 GiB | 2 PIB ^2^ | 2 TIB | 10 TIB | 368 TIB ^2^ | 368 TIB per licenza ^2^ 
 
 
 | Tipi di dischi supportati  a| 
