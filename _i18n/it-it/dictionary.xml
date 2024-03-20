@@ -435,7 +435,6 @@
   <block id="f6fdc425c22fbe91b4cd43c5702c7923" category="paragraph">Non dovresti utilizzare le snapshot del tuo cloud provider come parte del tuo piano di backup e recovery per i dati Cloud Volumes ONTAP. Per eseguire il backup e il ripristino dei dati ospitati su Cloud Volumes ONTAP, è necessario utilizzare sempre copie Snapshot di ONTAP o soluzioni di backup di terze parti.</block>
   <block id="468539119bbdc1adf73b917e2900aee4" category="inline-link">Scopri come utilizzare il backup e ripristino BlueXP per eseguire il backup e il ripristino dei dati ONTAP</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">I punti di coerenza ONTAP nel file system WAFL determinano la coerenza dei dati. Solo ONTAP può interrompere il file system WAFL per eseguire un backup coerente con il crash.</block>
-  <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP supporta istanze di macchine virtuali riservate e on-demand</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale riservata o on-demand dal tuo cloud provider. Altri tipi di istanze di macchine virtuali non sono supportati.</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">Le soluzioni di gestione automatica delle risorse applicative non devono essere utilizzate</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">Le soluzioni di gestione automatica delle risorse applicative non devono gestire i sistemi Cloud Volumes ONTAP. In questo modo, si può modificare una configurazione non supportata. Ad esempio, la soluzione potrebbe modificare Cloud Volumes ONTAP in un tipo di istanza di VM non supportato.</block>
@@ -718,4 +717,7 @@
   <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA (5 marzo 2024)</block>
   <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">La release Cloud Volumes ONTAP 9.14.1 General Availability è ora disponibile in AWS, Azure e Google Cloud.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
+  <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP supporta solo istanze di macchine virtuali riservate e on-demand</block>
+  <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">Limitazioni con agenti di terze parti e interni</block>
+  <block id="605271a7347a8df6508582f58efcf1ef" category="paragraph">Gli agenti di terze parti e le estensioni VM non sono supportati sulle istanze di macchine virtuali Cloud Volumes ONTAP.</block>
 </blocks>

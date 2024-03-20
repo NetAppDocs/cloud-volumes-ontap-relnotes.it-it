@@ -20,6 +20,34 @@ Le seguenti limitazioni si applicano a Cloud Volumes ONTAP in tutti i provider c
 
 
 
+== Funzionalità ONTAP non supportate
+
+Le seguenti funzioni non sono supportate con Cloud Volumes ONTAP:
+
+* Deduplica inline a livello di aggregato
+* Deduplica in background a livello aggregato
+* Centro di manutenzione dei dischi
+* Pulizia dei dischi
+* Mirroring FabricPool
+* Fibre Channel (FC)
+* Pool di flash
+* Volumi infiniti
+* Gruppi di interfacce
+* Failover LIF Intranode
+* MetroCluster
+* Verifica multi-admin
++
+L'attivazione della verifica multi-admin su Cloud Volumes ONTAP comporterà una configurazione non supportata.
+
+* RAID4, RAID-DP, RAID-TEC (RAID0 supportato)
+* Service Processor
+* Conformità SnapLock e modalità aziendali (solo cloud WORM supportato)
+* SnapMirror sincrono
+* VLAN
+
+
+
+
 == Numero massimo di operazioni di replica simultanee
 
 Il numero massimo di trasferimenti simultanei di SnapMirror o SnapVault per Cloud Volumes ONTAP è 100 per nodo, indipendentemente dal tipo di istanza o di macchina.
@@ -37,7 +65,7 @@ NOTE: I punti di coerenza ONTAP nel file system WAFL determinano la coerenza dei
 
 
 
-== Cloud Volumes ONTAP supporta istanze di macchine virtuali riservate e on-demand
+== Cloud Volumes ONTAP supporta solo istanze di macchine virtuali riservate e on-demand
 
 Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale riservata o on-demand dal tuo cloud provider. Altri tipi di istanze di macchine virtuali non sono supportati.
 
@@ -73,28 +101,6 @@ Le licenze SnapManager per server sono supportate con Cloud Volumes ONTAP. Le li
 
 
 
-== Funzionalità ONTAP non supportate
+== Limitazioni con agenti di terze parti e interni
 
-Le seguenti funzioni non sono supportate con Cloud Volumes ONTAP:
-
-* Deduplica inline a livello di aggregato
-* Deduplica in background a livello aggregato
-* Centro di manutenzione dei dischi
-* Pulizia dei dischi
-* Mirroring FabricPool
-* Fibre Channel (FC)
-* Pool di flash
-* Volumi infiniti
-* Gruppi di interfacce
-* Failover LIF Intranode
-* MetroCluster
-* Verifica multi-admin
-+
-L'attivazione della verifica multi-admin su Cloud Volumes ONTAP comporterà una configurazione non supportata.
-
-* RAID4, RAID-DP, RAID-TEC (RAID0 supportato)
-* Service Processor
-* Conformità SnapLock e modalità aziendali (solo cloud WORM supportato)
-* SnapMirror sincrono
-* VLAN
-
+Gli agenti di terze parti e le estensioni VM non sono supportati sulle istanze di macchine virtuali Cloud Volumes ONTAP.
