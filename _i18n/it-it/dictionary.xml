@@ -732,4 +732,5 @@
   <block id="569a9a2a6db2c8239fa51b37ad08f488" category="paragraph">La patch 9.14.1 P1 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">Visualizza l'elenco dei bug corretti nella patch P1</block>
   <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> (Accesso al NetApp Support Site richiesto).</block>
+  <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">Dopo la distribuzione iniziale, è supportata la modifica del nome di sottoscrizione di Azure utilizzato per le risorse Cloud Volumes ONTAP.</block>
 </blocks>
