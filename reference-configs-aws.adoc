@@ -45,7 +45,7 @@ Ogni licenza supporta una diversa capacità massima del sistema. La capacità ma
 
 
 | Tipi di dischi supportati  a| 
-* SSD General Purpose (gp3 e gp2) ^3^
+* SSD per uso generico (GP3 e GP2) ^3^,^5^
 * SSD IOPS (io1) ^3^ con provisioning
 * HDD ottimizzato per il throughput (st1) ^4^
 
@@ -58,6 +58,7 @@ Ogni licenza supporta una diversa capacità massima del sistema. La capacità ma
 . Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per informazioni sui limiti dei dischi, fare riferimento a. link:reference-limits-aws.html["limiti di storage"].
 . Le prestazioni di scrittura migliorate sono abilitate quando si utilizzano SSD con tutte le configurazioni Cloud Volumes ONTAP, ad eccezione DI PAYGO Explore.
 . Si sconsiglia di eseguire il tiering dei dati sullo storage a oggetti quando si utilizzano HDD ottimizzati per il throughput (st1).
+. Le zone locali di AWS supportano solo il tipo di disco SSD General Purpose (GP2).
 
 
 
@@ -108,6 +109,8 @@ In AWS, un aggregato può contenere fino a 6 dischi delle stesse dimensioni. Tut
 
 Ogni licenza Cloud Volumes ONTAP supporta diversi tipi di istanze EC2. Per comodità, la tabella seguente mostra la vCPU, la RAM e la larghezza di banda per ciascun tipo di istanza supportato. https://aws.amazon.com/ec2/instance-types/["Fare riferimento ad AWS per i dettagli più recenti e completi sui tipi di istanze EC2"^].
 
+Cloud Volumes ONTAP può essere eseguito su un'istanza di EC2 riservata o on-demand. Le soluzioni che utilizzano altri tipi di istanze non sono supportate.
+
 Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AWS documentati per ciascun tipo di istanza. Questi limiti non si allineano completamente con ciò che Cloud Volumes ONTAP è in grado di offrire. Per le prestazioni previste, fare riferimento a. https://www.netapp.com/us/media/tr-4383.pdf["Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni"^].
 
 [cols="8*"]
@@ -115,31 +118,31 @@ Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AW
 | Licenza | Istanza supportata | VCPU | RAM | Flash cache ^1^ | Larghezza di banda della rete (Gbps) | Larghezza di banda EBS (Mbps) | Elevata velocità di scrittura ^2^ 
 
 
-| *Explore o qualsiasi altra licenza* | m5.xlange | 4 | 16 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato (solo nodo singolo) 
+| *Explore o qualsiasi altra licenza* | m5.xlarge ^6^ | 4 | 16 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato (solo nodo singolo) 
 
 
-.3+| *Standard o qualsiasi altra licenza* | r5.xlange | 4 | 32 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato (solo nodo singolo) 
+.3+| *Standard o qualsiasi altra licenza* | r5.xlarge ^6^ | 4 | 32 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato (solo nodo singolo) 
 
 
 | m5a.2xlarge | 8 | 32 | Non supportato | Fino a 10 | Fino a 2,880 | Supportato 
 
 
-| m5.2xgrande | 8 | 32 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato 
+| m5,2xlarge ^6^ | 8 | 32 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato 
 
 
 .22+| *Premium o qualsiasi altra licenza* | m5n.2xlarge | 8 | 32 | Non supportato | Fino a 25 | Fino a 4,750 | Supportato 
 
 
-| r5.2xgrande | 8 | 64 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato 
+| r5,2xlarge ^6^ | 8 | 64 | Non supportato | Fino a 10 | Fino a 4,750 | Supportato 
 
 
 | r5d.2xlarge | 8 | 64 | Supportato | Fino a 10 | Fino a 4,750 | Supportato 
 
 
-| c5d.4xlarge | 16 | 32 | Supportato | Fino a 10 | 4,570 | Supportato 
+| c5d.4xlarge ^6^ | 16 | 32 | Supportato | Fino a 10 | 4,570 | Supportato 
 
 
-| m5.4xgrande | 16 | 64 | Non supportato | Fino a 10 | 4,750 | Supportato 
+| m5,4xlarge ^6^ | 16 | 64 | Non supportato | Fino a 10 | 4,750 | Supportato 
 
 
 | m5dn.4xlarge | 16 | 64 | Supportato | Fino a 25 | 4,750 | Supportato 
@@ -197,7 +200,10 @@ Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AW
 . Il tipo di istanza r5.12xlarge presenta un limite noto per la supportabilità. Se un nodo si riavvia inaspettatamente a causa di un panico, il sistema potrebbe non raccogliere i file principali utilizzati per la risoluzione dei problemi e causare il problema. Il cliente accetta i rischi e i termini di supporto limitati e si assume la responsabilità del supporto in caso di questa condizione. Questa limitazione riguarda le coppie ha e ha recentemente implementate, aggiornate dal 9.8. La limitazione non riguarda i sistemi a nodo singolo appena implementati.
 . Sebbene questi tipi di istanze EC2 supportino più di 64 vCPU, Cloud Volumes ONTAP supporta solo fino a 64 vCPU.
 . Quando si sceglie un tipo di istanza EC2, è possibile specificare se si tratta di un'istanza condivisa o dedicata.
-. Cloud Volumes ONTAP può essere eseguito su un'istanza di EC2 riservata o on-demand. Le soluzioni che utilizzano altri tipi di istanze non sono supportate.
+. Le zone locali AWS sono supportate nelle seguenti famiglie di tipi di istanza EC2 con dimensioni da xlarge a 4XLarge: M5, C5, C5d, R5 e R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Fai riferimento ad AWS per i dettagli più recenti e completi sui tipi di istanze EC2 supportati nelle zone locali"^].
++
+L'elevata velocità di scrittura non è supportata con questi tipi di istanze nelle zone locali di AWS.
+
 
 
 
