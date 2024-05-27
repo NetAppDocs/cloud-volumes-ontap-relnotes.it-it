@@ -381,38 +381,38 @@ Note:
 
 
 | Tipi di macchine virtuali supportati  a| 
-* E8ds_v4 ^4^
-* E32ds_v4 ^1,4^
-* E48ds_v4 ^1,4^
-* E80ids_v4 ^1,2,4^
-* E8ds_v5
-* E20ds_v5 ^1^
-* E32ds_v5 ^1^
-* E48ds_v5 ^1^
-* E64ds_v5 ^1^
-* L16s_v3 ^1,4,5^
-* L32s_v3 ^1,4,5^
-* L48s_v3 ^1,4,5^
-* L64s_v3 ^1,4,5^
+* E8ds_v4
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^1,2^
+* E8ds_v5 ^4^
+* E20ds_v5 ^1,4^
+* E32ds_v5 ^1,4^
+* E48ds_v5 ^1,4^
+* E64ds_v5 ^1,4^
+* L16s_v3 ^1,3,5^
+* L32s_v3 ^1,3,5^
+* L48s_v3 ^1,3,5^
+* L64s_v3 ^1,3,5^
 
  a| 
-* E8ds_v4 ^3^
-* E8ds_v5
+* E8ds_v4
+* E8ds_v5 ^4^
 
  a| 
-* E8ds_v4 ^4^
-* E32ds_v4 ^1,4^
-* E48ds_v4 ^1,4^
-* E80ids_v4 ^1,2,4^
-* E8ds_v5
-* E20ds_v5 ^1^
-* E32ds_v5 ^1^
-* E48ds_v5 ^1^
-* E64ds_v5 ^1^
-* L16s_v3 ^1,4,5^
-* L32s_v3 ^1,4,5^
-* L48s_v3 ^1,4,5^
-* L64s_v3 ^1,4,5^
+* E8ds_v4
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^1,2^
+* E8ds_v5 ^4^
+* E20ds_v5 ^1,4^
+* E32ds_v5 ^1,4^
+* E48ds_v5 ^1,4^
+* E64ds_v5 ^1,4^
+* L16s_v3 ^1,3,5^
+* L32s_v3 ^1,3,5^
+* L48s_v3 ^1,3,5^
+* L64s_v3 ^1,3,5^
 
 
 |===
@@ -420,8 +420,8 @@ Note:
 
 . Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con questi tipi di macchine virtuali quando si utilizza una coppia ha. È possibile abilitare un'elevata velocità di scrittura da BlueXP durante l'implementazione o in qualsiasi momento. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Scopri di più sulla scelta della velocità di scrittura"^].
 . Questa macchina virtuale è consigliata solo quando è necessario il controllo della manutenzione di Azure. Non è consigliato per altri casi di utilizzo a causa del prezzo più elevato.
-. Questi tipi di macchine virtuali sono supportati solo per coppie ha in una singola configurazione di zona di disponibilità eseguita su dischi gestiti condivisi.
-. Questi tipi di macchine virtuali sono supportati per coppie ha in una singola zona di disponibilità e configurazioni di più zone di disponibilità eseguite su dischi gestiti condivisi. Per i tipi VM LS_v3, il supporto di zone di disponibilità multiple inizia dalla versione 9.13.1 di ONTAP. Per i tipi di macchine virtuali EDS_v5, il supporto di zone di disponibilità multiple inizia dalla versione 9.14.1 RC1 di ONTAP.
+. Il supporto di zone di disponibilità multiple inizia dalla versione 9.13.1 di ONTAP.
+. Il supporto di zone di disponibilità multiple inizia dalla versione 9.14.1 RC1 di ONTAP.
 . Questo tipo di macchina virtuale include lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Scopri di più"^].
 
 
