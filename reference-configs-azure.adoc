@@ -231,6 +231,9 @@ Al contrario, se Cloud Volumes ONTAP è stato implementato utilizzando qualsiasi
 
 ==== COPPIE HA con il blob di pagina
 
+
+NOTE: Puoi utilizzare le seguenti configurazioni con le implementazioni blob di pagine ha Cloud Volumes ONTAP esistenti in Azure. I BLOB di pagina non sono supportati per le nuove distribuzioni.
+
 [role="tabbed-block"]
 ====
 .Licenze basate sulla capacità
