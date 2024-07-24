@@ -98,7 +98,6 @@
   <block id="a1834fbcd2847d469ef79f5526dcee65" category="inline-link">Fare riferimento ad AWS per i dettagli più recenti e completi sui tipi di istanze EC2</block>
   <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">Ogni licenza Cloud Volumes ONTAP supporta diversi tipi di istanze EC2. Per comodità, la tabella seguente mostra la vCPU, la RAM e la larghezza di banda per ciascun tipo di istanza supportato.<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block>.</block>
   <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni</block>
-  <block id="5070622feb6e4e88eeee7983bad01de6" category="paragraph">Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AWS documentati per ciascun tipo di istanza. Questi limiti non si allineano completamente con ciò che Cloud Volumes ONTAP è in grado di offrire. Per le prestazioni previste, fare riferimento a.<block ref="21181a62240b2a52719451cc8d855312" category="inline-link-rx"></block>.</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">Licenza</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">Istanza supportata</block>
   <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">VCPU</block>
@@ -752,4 +751,5 @@
   <block id="af9688d5cde98d7a041489576710fac7" category="paragraph">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.15.0 dalla versione 9.14.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
   <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.15.0.</block>
   <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.15.0</block>
+  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AWS documentati per ciascun tipo di istanza. Questi limiti non si allineano completamente con ciò che Cloud Volumes ONTAP è in grado di offrire. Per le prestazioni previste, fare riferimento alla<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>.</block>
 </blocks>
