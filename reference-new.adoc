@@ -20,6 +20,14 @@ Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime
 
 
 
+== 9.15.0 P2:00 (8 agosto 2024)
+
+La patch 9.15.0 P2 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.0P2["Visualizzare l'elenco dei bug corretti nella patch P2"^] (Accesso al sito di supporto NetApp richiesto).
+
+
+
 == 9.15.0 P1 (10 giugno 2024)
 
 Cloud Volumes ONTAP 9.15.0 P1 è ora disponibile in AWS, Azure e Google Cloud. La versione P1 è disponibile per la distribuzione e l'aggiornamento.
