@@ -32,7 +32,7 @@ Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale rise
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials, Professional ed Edge cache) 
+|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials e Professional) 
 
 
 | Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
@@ -80,7 +80,7 @@ Se si dispone di un sistema esistente in esecuzione su questo tipo di macchina, 
 
 . Le migliori prestazioni di scrittura sono abilitate quando si utilizzano dischi persistenti bilanciati e dischi persistenti delle performance (SSD).
 . L'interfaccia BlueXP mostra un tipo di macchina aggiuntivo supportato per Standard e BYOL: n1-highmem-4. Tuttavia, questo tipo di macchina non è destinato agli ambienti di produzione. L'abbiamo resa disponibile solo per un ambiente di laboratorio specifico.
-. A partire dal software Cloud Volumes ONTAP versione 9.13.0, _Flash cache_, elevata velocità di scrittura e un'unità di trasmissione massima (MTU) superiore di 8,896 byte, sono disponibili per le seguenti istanze di implementazione della coppia ha:
+. A partire da Cloud Volumes ONTAP 9.13.0, _Flash cache_, velocità di scrittura elevata e MTU (Maximum Transmission Unit) superiore di 8.896 byte, sono disponibili per le seguenti istanze di implementazione di coppia ha:
 +
 ** n2-standard-16
 ** n2-standard-32

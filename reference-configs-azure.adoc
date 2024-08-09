@@ -40,7 +40,7 @@ Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale rise
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials, Professional ed Edge cache) 
+|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials e Professional) 
 
 
 | Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
@@ -121,6 +121,9 @@ Note:
 
 . IL tiering dei dati sullo storage Azure Blob non è supportato con PAYGO Explore.
 . Questo tipo di macchina virtuale include lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Scopri di più"^].
++
+La versione minima di ONTAP richiesta per la configurazione di Flash cache su Azure è 9.13.1 GA.
+
 . Questi tipi di macchine virtuali utilizzano un https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["Ultra SSD"^] Per la VNVRAM, che offre migliori prestazioni di scrittura.
 +
 Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile passare a un altro tipo di macchina virtuale che _non_ utilizza un Ultra SSD per la VNVRAM. Ad esempio, non è possibile passare da E8ds_v4 a E8s_v3, ma è possibile passare da E8ds_v4 a E32ds_v4 perché entrambi i tipi di macchine virtuali utilizzano Ultra SSD.
@@ -240,7 +243,7 @@ NOTE: Puoi utilizzare le seguenti configurazioni con le implementazioni blob di 
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials, Professional ed Edge cache) 
+|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials e Professional) 
 
 
 | Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
@@ -377,7 +380,7 @@ Note:
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials, Professional ed Edge cache) 
+|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials e Professional) 
 
 
 | Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 

@@ -324,7 +324,6 @@
   <block id="2d9da48a9b4a4fd6966adc9c52393b79" category="doc">Limitazioni note in Azure</block>
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">Le seguenti limitazioni note sono specifiche di Cloud Volumes ONTAP in Microsoft Azure. Verificare anche <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
   <block id="a0cf071b9038a23221cd589c25d7e392" category="section-title">Limitazioni della cache flash</block>
-  <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">Alcuni tipi di macchine virtuali includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Nota le seguenti limitazioni per Flash cache:</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle performance di Flash cache fino a Cloud Volumes ONTAP 9.12.0. Durante l'implementazione o l'aggiornamento a Cloud Volumes ONTAP 9.12.1, non è necessario disattivare la compressione.</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">Disattivare la compressione dei dati utilizzando l'interfaccia CLI</block>
   <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">Quando si crea un volume da BlueXP, è possibile scegliere di non utilizzare l'efficienza dello storage, oppure creare un volume e poi<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>.</block>
@@ -688,7 +687,6 @@
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP è disponibile in Google Cloud come sistema a nodo singolo e come coppia di nodi ad alta disponibilità (ha) per tolleranza agli errori e operazioni senza interruzioni.</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">Licenze basate sulla capacità</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">Ottimizzato</block>
-  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">Licenza basata sulla capacità (Essentials, Professional ed Edge cache)</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">Licenze basate su nodo</block>
   <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">Per il supporto regionale di Google Cloud, vedere<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Quando si implementa Cloud Volumes ONTAP come sistema a nodo singolo in Azure, puoi scegliere tra le seguenti configurazioni di licenza basate sulla capacità o su nodi.</block>
@@ -756,4 +754,9 @@
   <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">La patch 9.15.0 P2 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">Visualizzare l'elenco dei bug corretti nella patch P2</block>
   <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
+  <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">Licenza basata sulla capacità (Essentials e Professional)</block>
+  <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">La versione minima di ONTAP richiesta per la configurazione di Flash cache su Azure è 9.13.1 GA.</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="list-text">A partire da Cloud Volumes ONTAP 9.13.0, _Flash cache_, velocità di scrittura elevata e MTU (Maximum Transmission Unit) superiore di 8.896 byte, sono disponibili per le seguenti istanze di implementazione di coppia ha:</block>
+  <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP utilizza lo storage NVMe locale in alcuni tipi di macchine virtuali come _Flash cache_. Notare questa limitazione:</block>
+  <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">Il riscaldamento della cache dopo un riavvio non è supportato.</block>
 </blocks>
