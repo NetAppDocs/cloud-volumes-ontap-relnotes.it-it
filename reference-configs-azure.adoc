@@ -115,7 +115,7 @@ Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale rise
 
 
 
-| Tipi di disco supportati ^4^ 3+| Dischi gestiti HDD standard, dischi gestiti SSD standard e dischi gestiti SSD Premium 
+| Tipi di disco supportati ^4^ 3+| Dischi gestiti con HDD standard, dischi gestiti con SSD standard, dischi gestiti con SSD Premium e dischi gestiti con SSD Premium da v2 GB. 
 |===
 Note:
 
@@ -126,7 +126,7 @@ La versione minima di ONTAP richiesta per la configurazione di Flash cache su Az
 
 . Questi tipi di macchine virtuali utilizzano un https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["Ultra SSD"^] Per la VNVRAM, che offre migliori prestazioni di scrittura.
 +
-Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile passare a un altro tipo di macchina virtuale che _non_ utilizza un Ultra SSD per la VNVRAM. Ad esempio, non è possibile passare da E8ds_v4 a E8s_v3, ma è possibile passare da E8ds_v4 a E32ds_v4 perché entrambi i tipi di macchine virtuali utilizzano Ultra SSD.
+Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile passare a un altro tipo di macchina virtuale che _non_ utilizza un Ultra SSD per la VNVRAM. Ad esempio, non è possibile passare da E8ds_v4 a E8s_v3, ma è possibile passare da E8ds_v4 a E32ds_v4 perché entrambi i tipi di macchine virtuali utilizzano Ultra SSD. Allo stesso modo, quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile modificare il tipo di VM in uno che _non_ supporti dischi SSD Premium v2 gestiti.
 
 +
 Al contrario, se Cloud Volumes ONTAP è stato implementato utilizzando qualsiasi altro tipo di macchina virtuale, non sarà possibile passare a un tipo di macchina virtuale che utilizza un Ultra SSD per la memoria VNVRAM. Ad esempio, non è possibile passare da E8s_v3 a E8ds_v4.
@@ -421,6 +421,9 @@ Note:
 * L64s_v3 ^1,3,5^
 
 
+
+
+| Tipi di dischi supportati 3+| Dischi gestiti con HDD standard, dischi gestiti con SSD standard, dischi gestiti con SSD Premium e dischi gestiti con SSD Premium da v2 GB. 
 |===
 Note:
 

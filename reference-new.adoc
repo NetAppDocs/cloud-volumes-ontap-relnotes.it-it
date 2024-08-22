@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.15.0 include un nuovo miglioramento. 
+summary: Cloud Volumes ONTAP 9.15.1 include un nuovo miglioramento. 
 ---
-= Novità di Cloud Volumes ONTAP 9.15.0
+= Novità di Cloud Volumes ONTAP 9.15.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,45 +14,54 @@ summary: Cloud Volumes ONTAP 9.15.0 include un nuovo miglioramento.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.15.0 include nuovi miglioramenti.
+Cloud Volumes ONTAP 9.15.1 include nuovi miglioramenti.
 
 Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime versioni di BlueXP. Vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Note di rilascio di BlueXP"^] per ulteriori informazioni.
 
 
 
-== 9.15.0 P2:00 (8 agosto 2024)
+== 9.15.1 GA (22 agosto 2024)
 
-La patch 9.15.0 P2 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.
-
-https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.0P2["Visualizzare l'elenco dei bug corretti nella patch P2"^] (Accesso al sito di supporto NetApp richiesto).
+Cloud Volumes ONTAP 9.15.1 GA è ora disponibile in AWS, Azure e Google Cloud. La versione GA è disponibile per la distribuzione e l'aggiornamento. Questa versione include le seguenti nuove funzioni e miglioramenti.
 
 
 
-== 9.15.0 P1 (10 giugno 2024)
+=== Supporto per SSD Premium v2 dischi gestiti su Azure
 
-Cloud Volumes ONTAP 9.15.0 P1 è ora disponibile in AWS, Azure e Google Cloud. La versione P1 è disponibile per la distribuzione e l'aggiornamento.
+I dischi gestiti SSD Premium da v2 TB sono ora supportati nei sistemi Cloud Volumes ONTAP in Azure. Questi dischi premium forniscono performance superiori con latenza inferiore a un costo inferiore per coppie nodo singolo e ha (High Availability, alta disponibilità), rispetto ai dischi SSD gestiti Premium. Come per gli altri dischi gestiti, le dimensioni massime del disco sono 32 TiB. È possibile configurare le performance (capacità, throughput e IOPS) di un disco gestito SSD Premium da v2 GB, permettendo ai carichi di lavoro di essere convenienti e soddisfacendo al contempo le mutevoli esigenze di performance.
 
-Questa versione include una nuova funzione e un miglioramento.
-
-
-
-=== Verifica delle immagini in Azure
-
-Sono ora disponibili funzionalità di sicurezza avanzate per la verifica delle firme dei file di immagine Cloud Volumes ONTAP esportati tramite Azure.
-
-Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html["Scopri di più su Azure Image Verification"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage["Scopri di più sullo storage Azure"].
 
 
 
-=== I blob delle pagine di Azure non sono più supportati per le nuove implementazioni di coppie ad alta disponibilità
+=== Implementa coppie ha in singole zone di disponibilità in Azure
 
-A partire da Cloud Volumes ONTAP 9.15.0 P1, i blob di pagina di Azure non sono più supportati per le nuove implementazioni di coppia ad alta disponibilità. Se al momento utilizzi Azure page blob in implementazioni esistenti di coppie ad alta disponibilità, puoi migrare a tipi di istanze di macchine virtuali più recenti nelle macchine virtuali della serie Edsv4 e nelle macchine virtuali della serie Edsv5.
+A partire da Cloud Volumes ONTAP 9.15.1, è possibile implementare istanze di macchine virtuali in modalità ha in singole zone di disponibilità (AZS) in Azure. A differenza delle precedenti implementazioni non zonali, Cloud Volumes ONTAP 9.15.1 utilizza i Scale Set di macchine virtuali Microsoft in modalità di orchestrazione flessibile per distribuire tutte le risorse, inclusi domini di errore separati all'interno della stessa AZ, garantendo una disponibilità ottimale.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Scopri di più sulle configurazioni supportate in Azure"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Scopri le coppie high Availability in Azure"].
 
 
 
-== Note sull'aggiornamento
+=== Supporto per macchine virtuali Scale Set per unificare tutti i tipi ha Azure
+
+Cloud Volumes ONTAP 9.15.1 sfrutta i Scale Set delle macchine virtuali in modalità di orchestrazione flessibile in Azure per implementare istanze di macchine virtuali in singole zone di disponibilità per coppie ha.
+
+Per impostazione predefinita, questa modalità di implementazione utilizza dischi gestiti SSD Premium da v2 GB. Copre tutti i gusti della modalità ha, Pageblob, archiviazione localmente ridondante (LRS), archiviazione zona ridondante (ZRS) o multi-zonale, e LRS zonale (AZ singolo), quando sono soddisfatti i seguenti criteri:
+
+* La versione di Cloud Volumes ONTAP è la 9.15.1 o successiva.
+* La regione supporta i Scale Set delle macchine virtuali in modalità di orchestrazione flessibile. Per informazioni sulle regioni supportate, fare riferimento a https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sito Web di Microsoft Azure: Prodotti disponibili per area geografica"^].
+* La zona selezionata in una zona supporta le Scale Set delle macchine virtuali in modalità di orchestrazione flessibile.
+* L'abbonamento è registrato per la `Microsoft.Compute/VMOrchestratorZonalMultiFD` funzione Microsoft.
++
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Lancio di una coppia Cloud Volumes ONTAP ha in Azure"^] e https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html["Attivare VMOrchestratorZonalMultiFD per singole zone di disponibilità"^].
+
+
+
+Se uno di questi criteri non viene soddisfatto, la precedente implementazione non zonale LRS diventa effettiva.
+
+
+
+== Note sull'aggiornamento.
 
 Leggi queste note per ulteriori informazioni sull'aggiornamento a questa release.
 
@@ -68,7 +77,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Percorso di upgrade supportato
 
-È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.15.0 dalla versione 9.14.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.
+È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.15.1 dalle versioni 9.15.0 e 9.14.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.
 
 
 
