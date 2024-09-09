@@ -59,7 +59,7 @@ Se uno di questi criteri non viene soddisfatto, la precedente modalità di distr
 
 === Supporto per macchine virtuali Scale Set per unificare tutti i tipi ha Azure
 
-Cloud Volumes ONTAP 9.15.1 sfrutta i Scale Set delle macchine virtuali in modalità di orchestrazione flessibile in Azure per implementare istanze di macchine virtuali in singole zone di disponibilità per coppie ha. Copre tutti i gusti della modalità ha, Pageblob, LRS, ZRS (zone Redundant Storage) o multi-zonale, e LRS zonale (single AZ).
+Cloud Volumes ONTAP 9.15.1 sfrutta i Scale Set delle macchine virtuali in modalità di orchestrazione flessibile in Azure per implementare istanze di macchine virtuali in singole zone di disponibilità per coppie ha. Copre tutti i gusti della modalità ha, page blob, LRS, ZRS (zone Redundant Storage) o multi-zonale e LRS zonale (single AZ).
 
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentazione di Microsoft Azure: Documentazione sui set di scalabilità delle macchine virtuali"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Scopri le coppie high Availability in Azure"^].
