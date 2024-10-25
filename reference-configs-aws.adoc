@@ -52,7 +52,7 @@ Ogni licenza supporta una diversa capacità massima del sistema. La capacità ma
 
 
 
-| Tiering dei dati a freddo in S3 6+| Supportato 
+| Tiering dei dati a freddo in S3 2+| Supportato | Non supportato 3+| Supportato 
 |===
 . Per una coppia ha, il limite di capacità è per l'intera coppia ha. Non è per nodo. Ad esempio, se si utilizza la licenza Premium, è possibile avere fino a 368 TIB di capacità tra entrambi i nodi.
 . Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per informazioni sui limiti dei dischi, fare riferimento a. link:reference-limits-aws.html["limiti di storage"].
