@@ -83,7 +83,7 @@ Cloud Volumes ONTAP 9.15.1 sfrutta i Scale Set delle macchine virtuali in modali
 
 
 
-== Note sull'aggiornamento.
+== Note sull'aggiornamento
 
 Leggi queste note per ulteriori informazioni sull'aggiornamento a questa release.
 
