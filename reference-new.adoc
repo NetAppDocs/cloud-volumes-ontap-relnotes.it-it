@@ -20,6 +20,14 @@ Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime
 
 
 
+== 9.15.1 P4:00 (25 novembre 2024)
+
+La patch 9.15.1 P4 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P4["Visualizzare l'elenco dei bug corretti nella patch P4"^] (Accesso al sito di supporto NetApp richiesto).
+
+
+
 == 9.15.1 P3:00 (29 ottobre 2024)
 
 La patch 9.15.1 P3 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.
@@ -80,6 +88,16 @@ Cloud Volumes ONTAP 9.15.1 sfrutta i Scale Set delle macchine virtuali in modali
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentazione di Microsoft Azure: Documentazione sui set di scalabilità delle macchine virtuali"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Scopri le coppie high Availability in Azure"^].
 
+
+
+
+=== Supporto per write-back FlexCache
+
+A partire da Cloud Volumes ONTAP 9.15.1, il write-back di FlexCache è supportato come modalità operativa alternativa per la scrittura in una cache.
+
+Per ulteriori informazioni su questa funzione, consultare la documentazione di ONTAP https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html["Panoramica di write-back di FlexCache"^] .
+
+Per informazioni su come BlueXP  gestisce FlexCache Volumes, fare riferimento alla https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["Documenti di caching dei volumi di BlueXP "^] .
 
 
 

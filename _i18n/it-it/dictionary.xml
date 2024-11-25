@@ -28,7 +28,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">Avviso per ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP offre diverse opzioni di licenza che consentono di scegliere un modello di consumo che soddisfi le tue esigenze.</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">Per i nuovi clienti sono disponibili le seguenti opzioni di licenza.</block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="list-text">Pacchetti di licenze basati sulla capacità</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="list-text">Le licenze basate sulla capacità consentono di pagare Cloud Volumes ONTAP per TIB di capacità. La licenza è associata al tuo account NetApp e ti consente di addebitare la licenza a più sistemi, purché sia disponibile una capacità sufficiente attraverso la licenza.</block>
@@ -582,7 +581,6 @@
   <block id="d556a98bff3e1e758e87dd72b174feca" category="list-text">32 TIB</block>
   <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TIB (solo dischi gestiti)</block>
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TIB (solo dischi gestiti)</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Note di rilascio home</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">Panoramica sulle licenze</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="sidebar">Configurazioni supportate</block>
@@ -743,7 +741,6 @@
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Sito Web di Microsoft Azure: Prodotti disponibili per area geografica</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">Lancio di una coppia Cloud Volumes ONTAP ha in Azure</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.15.1 dalle versioni 9.15.0 e 9.14.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
-  <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.15.1</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.15.1.</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">Configurazione DI una singola zona di disponibilità HA con dischi gestiti condivisi</block>
   <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">Se si sceglie uno di questi tipi di macchine virtuali quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile passare a un altro tipo di macchina virtuale che _non_ utilizza un Ultra SSD per la VNVRAM. Ad esempio, non è possibile passare da E8ds_v4 a E8s_v3, ma è possibile passare da E8ds_v4 a E32ds_v4 perché entrambi i tipi di macchine virtuali utilizzano Ultra SSD. Allo stesso modo, quando si implementa un nuovo sistema Cloud Volumes ONTAP, non è possibile modificare il tipo di VM in uno che _non_ supporti dischi SSD Premium v2 gestiti. Per ulteriori informazioni sulle configurazioni supportate per dischi SSD Premium v2 gestiti, fare riferimento a<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block>.</block>
@@ -786,4 +783,19 @@
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Cold data tiering a S3*</block>
   <block id="640897782baa10cc7d259d38d703b275" category="list-text">Le performance di scrittura migliorate sono abilitate quando si utilizzano SSD con tutte le configurazioni Cloud Volumes ONTAP.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">Note sull'aggiornamento</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Per Cloud Volumes ONTAP sono disponibili diverse opzioni di licenza. Ciascuna opzione consente di scegliere un modello di consumo che soddisfi le proprie esigenze.</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">Pacchetti</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">Ulteriori informazioni sulle licenze basate sulla capacità</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3cf4ee6dc24f388844547c270dcc62a" category="section-title">9.15.1 P4:00 (25 novembre 2024)</block>
+  <block id="70801cc1e406ee3c5d3829c09f39d8cc" category="paragraph">La patch 9.15.1 P4 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P4</block>
+  <block id="427f5af74d1c3371844f5ceb79ac74ea" category="paragraph"><block ref="d5d8d8f3e8dad9e51774bb89e5c4d87f" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
+  <block id="349b79620c55ff0a99622dc458417341" category="section-title">Supporto per write-back FlexCache</block>
+  <block id="7bab27e59a8093f7f1f9f208560906b5" category="paragraph">A partire da Cloud Volumes ONTAP 9.15.1, il write-back di FlexCache è supportato come modalità operativa alternativa per la scrittura in una cache.</block>
+  <block id="145c5d02a1872aab28d9aee2ee7b1adb" category="inline-link">Panoramica di write-back di FlexCache</block>
+  <block id="e9847573f516d487b3b41696529ea9ac" category="paragraph">Per ulteriori informazioni su questa funzione, consultare la documentazione di ONTAP<block ref="f66b7fc45c4e32762d53ba0f27132a8b" category="inline-link-rx"></block> .</block>
+  <block id="34756beb20b44cc3e732425639fae228" category="inline-link">Documenti di caching dei volumi di BlueXP </block>
+  <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">Per informazioni su come BlueXP  gestisce FlexCache Volumes, fare riferimento alla<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block> .</block>
+  <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.15.1</block>
 </blocks>
