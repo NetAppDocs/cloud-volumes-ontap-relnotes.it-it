@@ -808,4 +808,12 @@
   <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">^2^ il tiering dei dati in Google Cloud Storage non è supportato con PAYGO Explore.</block>
   <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">^3^ le macchine della serie n1 non sono più disponibili per la selezione in BlueXP  quando si distribuiscono nuove istanze di Cloud Volumes ONTAP in Google Cloud. Le macchine della serie n1 verranno conservate e supportate solo nei sistemi esistenti meno recenti. Le nuove implementazioni di Cloud Volumes ONTAP sono supportate in Google Cloud solo a partire dalla release 9,8. Si consiglia di passare alle macchine della serie n2 compatibili con Cloud Volumes ONTAP 9,8 e versioni successive. Le macchine della serie n1, tuttavia, saranno disponibili per le nuove implementazioni eseguite tramite l'API.</block>
   <block id="31269d00cd277adf90f42f882afbd293" category="list-text">^4^ le prestazioni di scrittura migliorate sono abilitate quando si utilizzano dischi permanenti a prestazioni elevate (SSD).</block>
+  <block id="ae1d06c72e1d3684dc2b0784b447f8bb" category="section-title">9.15.1 P6 (20 gennaio 2025)</block>
+  <block id="e685687a0700868820f260439fea454f" category="paragraph">La patch 9.15.1 P6 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P6</block>
+  <block id="6dab4a75e78f4da6ffbd02ad6871cda1" category="paragraph"><block ref="6c7645cce7e25bc9b23c20eb84477db8" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
+  <block id="1f3004ca828e883c15cacfbf9150d29e" category="section-title">9.15.1 P5 (20 gennaio 2025)</block>
+  <block id="65e2877203eeb473a40f78bda7e6d3b4" category="paragraph">La patch 9.15.1 P5 è ora disponibile per Cloud Volumes ONTAP per tutti i cloud provider. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P5</block>
+  <block id="294d0a8af93eae96d1bba19b5a5f69c4" category="paragraph"><block ref="df0857167980a53ee1e89853022218d5" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
 </blocks>
