@@ -256,4 +256,4 @@ L'elevata velocità di scrittura non è supportata con questi tipi di istanze ne
 
 == Regioni supportate
 
-Per il supporto della regione AWS, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+Per il supporto regionale AWS, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].

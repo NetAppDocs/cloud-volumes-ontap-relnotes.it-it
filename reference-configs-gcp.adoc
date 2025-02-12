@@ -184,4 +184,4 @@ In Google Cloud, un aggregato può contenere fino a 6 dischi dello stesso tipo e
 
 == Regioni supportate
 
-Per il supporto regionale di Google Cloud, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+Per il supporto regionale di Google Cloud, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].

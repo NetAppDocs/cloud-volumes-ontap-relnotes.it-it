@@ -566,4 +566,4 @@ Le coppie HA utilizzano i dischi gestiti di Azure. Sono supportati i seguenti ti
 
 == Regioni supportate
 
-Per il supporto della regione Azure, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+Per il supporto dell'area Azure, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].

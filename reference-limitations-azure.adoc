@@ -37,4 +37,4 @@ Cloud Volumes ONTAP utilizza lo storage NVMe locale in alcuni tipi di macchine v
 
 Le coppie HA non sono supportate in alcune regioni.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco delle regioni Azure supportate"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco delle regioni Azure supportate"^].
