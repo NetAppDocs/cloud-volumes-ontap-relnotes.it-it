@@ -4,7 +4,7 @@ permalink: reference-limitations-gcp.html
 keywords: limitations, google cloud platform, gcp, psc, private service connect 
 summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni. 
 ---
-= Limitazioni note di Google Cloud
+= Limiti noti per Cloud Volumes ONTAP in Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

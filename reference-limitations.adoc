@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
 summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni. 
 ---
-= Limitazioni in tutti i provider di cloud
+= Limitazioni note per Cloud Volumes ONTAP in tutti i cloud provider
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
