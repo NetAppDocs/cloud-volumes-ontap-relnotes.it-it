@@ -773,4 +773,12 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Limiti di storage per Cloud Volumes ONTAP in Google Cloud</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Collaborazione con i cloud provider per Cloud Volumes ONTAP</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">Scopri in che modo NetApp collabora con i cloud provider per risolvere potenziali problemi.</block>
+  <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2:00 (17 aprile 2025)</block>
+  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">La patch 9.16.1 P2 può ora essere implementata e aggiornata per Cloud Volumes ONTAP in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'upgrade in AWS. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P2</block>
+  <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
+  <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1:00 (17 aprile 2025)</block>
+  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">La patch 9.16.1 P1 può ora essere implementata e aggiornata per Cloud Volumes ONTAP in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'upgrade in AWS. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P1</block>
+  <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
 </blocks>
