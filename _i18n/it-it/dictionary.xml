@@ -321,8 +321,6 @@
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">Disattivare la compressione dei dati utilizzando l'interfaccia CLI</block>
   <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">Quando si crea un volume da BlueXP, è possibile scegliere di non utilizzare l'efficienza dello storage, oppure creare un volume e poi<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>.</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">Il ripristino della cache dopo un riavvio non è supportato con Cloud Volumes ONTAP.</block>
-  <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitazioni DI HA</block>
-  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Le coppie HA non sono supportate in alcune regioni.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">Visualizza l'elenco delle regioni Azure supportate</block>
   <block id="c28d38eab2723d5b03a4a9a583f5c81e" category="summary">Queste limitazioni note sono specifiche di Cloud Volumes ONTAP in Amazon Web Services.</block>
   <block id="66c8008cfff39be32e25f6351f5b9375" category="paragraph">Le seguenti limitazioni note sono specifiche di Cloud Volumes ONTAP in Amazon Web Services. Verificare anche <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
@@ -781,4 +779,10 @@
   <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">La patch 9.16.1 P1 può ora essere implementata e aggiornata per Cloud Volumes ONTAP in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'upgrade in AWS. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P1</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
+  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">Limiti delle implementazioni ad alta disponibilità</block>
+  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">Le coppie ha (High Availability, alta disponibilità) non sono supportate in alcune regioni.</block>
+  <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitazioni con le implementazioni di ha in singole zone di disponibilità</block>
+  <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implementa coppie ha in singole zone di disponibilità in Azure</block>
+  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partire da Cloud Volumes ONTAP 9.15.1, è possibile implementare istanze di macchine virtuali in modalità ha in singole zone di disponibilità (AZS) in Azure. Per informazioni sui criteri di supporto di questa funzione, fare riferimento a<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>.</block>
+  <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se la versione Cloud Volumes ONTAP è precedente alla 9.15.1 o se una di queste condizioni non è soddisfatta, il modello di distribuzione precedente che utilizza i set di disponibilità diventa effettivo. Ciò si applica solo alle configurazioni ha.</block>
 </blocks>

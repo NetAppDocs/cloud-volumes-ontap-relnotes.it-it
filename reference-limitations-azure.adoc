@@ -33,8 +33,16 @@ Cloud Volumes ONTAP utilizza lo storage NVMe locale in alcuni tipi di macchine v
 
 
 
-== Limitazioni DI HA
+== Limiti delle implementazioni ad alta disponibilità
 
-Le coppie HA non sono supportate in alcune regioni.
+Le coppie ha (High Availability, alta disponibilità) non sono supportate in alcune regioni.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco delle regioni Azure supportate"^].
+
+
+
+== Limitazioni con le implementazioni di ha in singole zone di disponibilità
+
+A partire da Cloud Volumes ONTAP 9.15.1, è possibile implementare istanze di macchine virtuali in modalità ha in singole zone di disponibilità (AZS) in Azure. Per informazioni sui criteri di supporto di questa funzione, fare riferimento a https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Implementa coppie ha in singole zone di disponibilità in Azure"^].
+
+Se la versione Cloud Volumes ONTAP è precedente alla 9.15.1 o se una di queste condizioni non è soddisfatta, il modello di distribuzione precedente che utilizza i set di disponibilità diventa effettivo. Ciò si applica solo alle configurazioni ha.
