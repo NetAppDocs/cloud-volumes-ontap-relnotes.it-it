@@ -785,4 +785,8 @@
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implementa coppie ha in singole zone di disponibilità in Azure</block>
   <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partire da Cloud Volumes ONTAP 9.15.1, è possibile implementare istanze di macchine virtuali in modalità ha in singole zone di disponibilità (AZS) in Azure. Per informazioni sui criteri di supporto di questa funzione, fare riferimento a<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>.</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se la versione Cloud Volumes ONTAP è precedente alla 9.15.1 o se una di queste condizioni non è soddisfatta, il modello di distribuzione precedente che utilizza i set di disponibilità diventa effettivo. Ciò si applica solo alle configurazioni ha.</block>
+  <block id="2b0112a3fe8db72b28cea3e10ddba401" category="section-title">9.16.1 P3 (29 maggio 2025)</block>
+  <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">La patch 9.16.1 P3 può ora essere implementata e aggiornata per Cloud Volumes ONTAP in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'upgrade in AWS. BlueXP richiederà di aggiornare i sistemi esistenti a questa versione di patch.</block>
+  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Visualizzare l'elenco dei bug corretti nella patch P3</block>
+  <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (Accesso al sito di supporto NetApp richiesto).</block>
 </blocks>
