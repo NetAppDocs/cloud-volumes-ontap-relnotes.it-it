@@ -78,13 +78,3 @@ NOTE: Per AWS, non verrà richiesto questo aggiornamento. L'aggiornamento a Clou
 * L'aggiornamento di un sistema a nodo singolo porta il sistema offline per un massimo di 25 minuti, durante i quali l'i/o viene interrotto.
 * L'upgrade di una coppia ha non comporta interruzioni e l'i/o rimane ininterrotto. Durante questo processo di upgrade senza interruzioni, ogni nodo viene aggiornato in tandem per continuare a fornire i/o ai client.
 
-
-
-
-=== le istanze c4, m4 e r4 non sono più supportate
-
-In AWS, i tipi di istanze c4, m4 e r4 EC2 non sono più supportati con Cloud Volumes ONTAP. Se si dispone di un sistema in esecuzione su un tipo di istanza c4, m4 o r4, è necessario passare a un tipo di istanza nella famiglia di istanze c5, m5 o r5. Non è possibile eseguire l'aggiornamento a questa release fino a quando non si modifica il tipo di istanza.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Scopri come modificare il tipo di istanza EC2 per Cloud Volumes ONTAP"^].
-
-Fare riferimento a. link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Supporto NetApp"^] per ulteriori informazioni sulla fine della disponibilità e sul supporto per questi tipi di istanze.

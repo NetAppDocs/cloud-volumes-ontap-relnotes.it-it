@@ -164,6 +164,12 @@ NOTE: _Flash cache_, High Write Mode e MTU di 8,896 sono dipendenti dalle funzio
 
 --
 ====
+Per ulteriori informazioni su tipi di macchine specifici, consulta la documentazione di Google Cloud:
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["tipi di macchine per uso generale della serie n1"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["Tipi di macchine per uso generale della serie N2"^]
+
+
 
 
 == Dimensioni dei dischi supportate
