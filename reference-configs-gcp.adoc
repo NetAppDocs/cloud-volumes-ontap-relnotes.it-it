@@ -32,7 +32,7 @@ Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale rise
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Ottimizzato | Licenza basata sulla capacità (Essentials e Professional) 
+|  | Freemium | Ottimizzato ^4^ | Licenza basata sulla capacità (Essentials e Professional) 
 
 
 | Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
@@ -91,7 +91,7 @@ A partire da Cloud Volumes ONTAP 9.13.0, _Flash cache_, velocità di scrittura e
 È possibile attivare _Flash cache_ e un'elevata velocità di scrittura durante l'implementazione di un tipo di istanza idoneo. Per abilitare l'unità di trasmissione massima di 8,896 byte, è necessario scegliere VPC-1, VPC-2 o VPC-3 per l'implementazione. La MTU più elevata consente un throughput di rete più elevato. Per ulteriori informazioni sull'avvio di una di queste implementazioni, vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lancio di una coppia ha in Google Cloud"].
 
 
-NOTE: _Flash cache_, High Write Mode e MTU di 8,896 sono dipendenti dalle funzionalità e non possono essere disabilitati singolarmente all'interno di un'istanza configurata.
+NOTE: _Flash cache_, High Write Mode e MTU di 8,896 sono dipendenti dalle funzionalità e non possono essere disabilitati singolarmente all'interno di un'istanza configurata. . ^4^ A partire dal 1° luglio 2025, la licenza Cloud Volumes ONTAP Optimized sarà obsoleta e non sarà più disponibile per l'acquisto o il rinnovo nel marketplace di Google Cloud per gli abbonamenti con pagamento a consumo (PAYGO). Per informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Novità di Cloud Volumes ONTAP"^].
 
 --
 .Licenze basate su nodo
