@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-provider-integrations.html 
-keywords: maintenance event, azure maintenance event, cloud provider, issues, support 
+keywords: maintenance event, azure maintenance event, cloud provider, issues, support, SMB CA in CVO 
 summary: Questa pagina descrive come NetApp collabora con i cloud provider per risolvere i problemi che potrebbero insorgere. 
 ---
 = Collaborazione con i cloud provider per Cloud Volumes ONTAP
@@ -34,4 +34,7 @@ La gestione speciale degli eventi di manutenzione è supportata per le coppie ha
 
 Quando viene annunciata la finestra di manutenzione, il nodo partner del nodo di destinazione esegue un takeover. Una volta completata la manutenzione, viene avviato un giveback. Dopo il giveback, si prevede che la coppia ha torni a uno stato di salute. In caso contrario, contattare il supporto NetApp per assistenza. Si noti che gli eventi di manutenzione sono mirati a una delle macchine virtuali di una coppia ha alla volta, e in genere entrambi i nodi sono mirati in un periodo di tempo relativamente breve.
 
-I client CIFS/SMB che utilizzano condivisioni CIFS Cloud Volumes ONTAP non continuamente disponibili subiranno una perdita di sessione sia quando si verifica un Takeover sia quando l'aggregato utilizzato dalla sessione viene restituita al nodo principale dell'aggregato. Si tratta di un limite imposto dal protocollo CIFS/SMB stesso. I clienti potrebbero voler utilizzare prodotti di terze parti per evitare problemi che potrebbero derivare da takeover e giveback. Per ulteriore assistenza, contatta il supporto NetApp.
+I client CIFS/SMB che utilizzano condivisioni CIFS non disponibili in modo continuativo Cloud Volumes ONTAP subiranno una perdita di sessione sia in caso di takeover, sia quando l'aggregato utilizzato dalla sessione viene restituito al nodo home dell'aggregato. Questa è una limitazione imposta dal protocollo CIFS/SMB stesso. È possibile utilizzare prodotti di terze parti approvati per evitare problemi derivanti da takeover e giveback. Per ulteriore assistenza, contattare il supporto NetApp .
+
+
+NOTE: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Condivisioni SMB costantemente disponibili"^] per operazioni non distruttive non sono supportate in Cloud Volumes ONTAP.

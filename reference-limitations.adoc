@@ -44,6 +44,10 @@ L'attivazione della verifica multi-admin su Cloud Volumes ONTAP comporterà una 
 * Conformità SnapLock e modalità aziendali (solo cloud WORM supportato)
 * SnapMirror sincrono
 * VLAN
+* Disponibilità continua (CA) per PMI
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Condivisioni SMB costantemente disponibili"^] per operazioni non distruttive non sono supportate.
+
 
 
 
