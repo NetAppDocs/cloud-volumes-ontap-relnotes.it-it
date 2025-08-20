@@ -45,7 +45,9 @@ Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale rise
 |  | Freemium | Ottimizzato ^5^ | Licenza basata sulla capacità (Essentials e Professional) 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB  a| 
+Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP supporta la suddivisione in livelli per l'archiviazione di oggetti.  La capacità totale a livelli può essere scalata fino al limite del bucket del provider cloud.  Sebbene la licenza non imponga restrizioni di capacità, dovresti seguire le https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Migliori pratiche FabricPool"^] per garantire prestazioni ottimali, affidabilità ed efficienza dei costi durante la configurazione e la gestione del tiering.
+
 
 
 | Tipi di macchine virtuali supportati  a| 
@@ -250,7 +252,9 @@ NOTE: I BLOB di pagina di Azure non sono supportati per alcuna nuova implementaz
 |  | Freemium | Ottimizzato ^4^ | Licenza basata sulla capacità (Essentials e Professional) 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB  a| 
+Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP supporta la suddivisione in livelli per l'archiviazione di oggetti.  La capacità totale a livelli può essere scalata fino al limite del bucket del provider cloud.  Sebbene la licenza non imponga restrizioni di capacità, dovresti seguire le https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Migliori pratiche FabricPool"^] per garantire prestazioni ottimali, affidabilità ed efficienza dei costi durante la configurazione e la gestione del tiering.
+
 
 
 | Tipi di macchine virtuali supportati  a| 
@@ -388,7 +392,9 @@ Note:
 |  | Freemium | Ottimizzato ^7^ | Licenza basata sulla capacità (Essentials e Professional) 
 
 
-| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB | 2 PIB | 2 PIB 
+| Capacità massima del sistema (dischi + storage a oggetti) | 500 GiB  a| 
+Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP supporta la suddivisione in livelli per l'archiviazione di oggetti.  La capacità totale a livelli può essere scalata fino al limite del bucket del provider cloud.  Sebbene la licenza non imponga restrizioni di capacità, dovresti seguire le https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Migliori pratiche FabricPool"^] per garantire prestazioni ottimali, affidabilità ed efficienza dei costi durante la configurazione e la gestione del tiering.
+
 
 
 | Tipi di macchine virtuali supportati  a| 

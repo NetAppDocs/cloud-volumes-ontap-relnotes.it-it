@@ -26,6 +26,12 @@ NetApp non supporta il superamento del limite di capacità del sistema. Se si ra
 
 Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. È possibile raggiungere il limite di capacità entro https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per ulteriori informazioni, fare riferimento ai limiti dei dischi riportati di seguito.
 
+.Limite di capacità per le licenze basate sulla capacità
+Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP supporta la suddivisione in livelli per l'archiviazione di oggetti.  La capacità totale a livelli può essere scalata fino al limite del bucket del provider cloud.  Sebbene la licenza non imponga restrizioni di capacità, dovresti seguire le https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Migliori pratiche FabricPool"^] per garantire prestazioni ottimali, affidabilità ed efficienza dei costi durante la configurazione e la gestione del tiering. Fare riferimento al  https://cloud.google.com/storage/docs/buckets["Documentazione di Google Cloud"^] per maggiori informazioni.
+
+Limiti di capacità per altri tipi di licenza::
+
+
 [cols="25,75"]
 |===
 | Licenza | Capacità massima del sistema (dischi + storage a oggetti) 
@@ -44,15 +50,12 @@ Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il lim
 
 
 | Licenza basata su nodo | 2 PIB (richiede più licenze) 
-
-
-| Licenza basata sulla capacità | 2 PIB 
 |===
 .Per una coppia ha, il limite di capacità concesso in licenza per nodo o per l'intera coppia ha?
 Il limite di capacità è per l'intera coppia ha. Non è per nodo. Ad esempio, se si utilizza la licenza Premium, è possibile avere fino a 368 TB di capacità tra entrambi i nodi.
 
 .Per una coppia ha, i dati mirrorati vengono conteggiati rispetto al limite di capacità concesso in licenza?
-No, non è così. I dati di una coppia ha vengono sottoposti a mirroring sincrono tra i nodi in modo che siano disponibili in caso di guasto in Google Cloud. Ad esempio, se si acquista un disco da 8 TB sul nodo A, BlueXP alloca anche un disco da 8 TB sul nodo B utilizzato per i dati mirrorati. Sebbene sia stato eseguito il provisioning di 16 TB di capacità, solo 8 TB sono contati rispetto al limite di licenza.
+No, non è così.  I dati in una coppia HA vengono replicati in modo sincrono tra i nodi, in modo che siano disponibili in caso di errore in Google Cloud.  Ad esempio, se si acquista un disco da 8 TB sul nodo A, BlueXP alloca anche un disco da 8 TB sul nodo B, che viene utilizzato per i dati in mirroring.  Sebbene sia impostata una capacità di 16 TB, solo 8 TB vengono conteggiati nel limite della licenza.
 
 
 
@@ -83,7 +86,7 @@ Cloud Volumes ONTAP raggruppa i dischi della piattaforma cloud Google in _aggreg
 Note:
 
 . Il numero massimo di aggregati di dati non include l'aggregato root.
-. Il limite di capacità aggregata si basa sui dischi che compongono l'aggregato. Il limite non include lo storage a oggetti utilizzato per il tiering dei dati.
+. I dischi che compongono l'aggregato determinano il limite di capacità dell'aggregato.  Questo limite non include l'archiviazione di oggetti utilizzata per la suddivisione in livelli dei dati.
 . Tutti i dischi di un aggregato devono avere le stesse dimensioni.
 
 
@@ -121,7 +124,7 @@ La tabella riportata di seguito mostra la capacità massima del sistema con i so
 
 Alcune configurazioni consentono di creare ulteriori VM di storage (SVM) per Cloud Volumes ONTAP.
 
-Questi sono i limiti testati. Sebbene sia teoricamente possibile configurare altre VM di storage, non è supportato.
+Questi sono i limiti testati.  La configurazione di più VM di archiviazione non è supportata.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Scopri come creare altre VM di storage"^].
 
@@ -153,7 +156,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 |===
 . Queste 24 VM storage possono servire i dati o essere configurate per il disaster recovery (DR).
 . Per le licenze basate sulla capacità, non sono previsti costi di licenza aggiuntivi per le VM di storage aggiuntive, ma è previsto un costo di capacità minimo di 4 TIB per VM di storage. Ad esempio, se si creano due VM storage e ciascuna dispone di 2 TIB di capacità fornita, verrà addebitato un totale di 8 TIB.
-. Per la BYOL basata su nodo, è necessaria una licenza aggiuntiva per ogni VM di storage _data-serving_ aggiuntiva oltre la prima VM di storage fornita con Cloud Volumes ONTAP per impostazione predefinita. Contattare il proprio account team per ottenere una licenza add-on per le macchine virtuali di storage.
+. Per BYOL basato su nodi, è richiesta una licenza aggiuntiva per ogni VM di storage aggiuntiva per la distribuzione dei dati oltre alla prima VM di storage fornita con Cloud Volumes ONTAP per impostazione predefinita.  Contatta il team del tuo account per ottenere una licenza aggiuntiva per la macchina virtuale di archiviazione.
 +
 Le VM di storage configurate per il disaster recovery (DR) non richiedono una licenza add-on (sono gratuite), ma contano rispetto al limite delle VM di storage. Ad esempio, se si dispone di 12 VM di storage che servono i dati e di 12 VM di storage configurate per il disaster recovery, si è raggiunto il limite e non è possibile creare altre VM di storage.
 
