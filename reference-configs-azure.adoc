@@ -366,7 +366,7 @@ Note:
 
 
 
-| Tipi di dischi supportati 3+| Aree delle pagine 
+| Tipi di dischi dati supportati 3+| Aree delle pagine 
 |===
 Note:
 
@@ -436,7 +436,7 @@ Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP sup
 
 
 
-| Tipi di disco supportati ^6^ 3+| Dischi gestiti con HDD standard, dischi gestiti con SSD standard, dischi gestiti con SSD Premium e dischi gestiti con SSD Premium da v2 GB. 
+| Tipi di disco supportati ^6^ 3+| Dischi gestiti Premium SSD o dischi gestiti Premium SSD v2. 
 |===
 Note:
 
@@ -445,8 +445,8 @@ Note:
 . ^3^ Il supporto per più zone di disponibilità inizia dalla versione 9.13.1 ONTAP .
 . ^4^ Il supporto per più zone di disponibilità inizia dalla versione ONTAP 9.14.1 RC1.
 . ^5^ Questo tipo di VM include l'archiviazione NVMe locale, che Cloud Volumes ONTAP utilizza come _Flash Cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura casuale intensiva, inclusi database, email e servizi file. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Scopri di più"^].
-. ^6^ Per informazioni sui tipi di disco supportati per le distribuzioni HA con zone di disponibilità singole e multiple, fare riferimento a  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure (coppia ha)"^] .
-. ^7^ A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nel marketplace di Azure per gli abbonamenti con pagamento in base al consumo (PAYGO). Per ulteriori informazioni, consulta  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Novità di Cloud Volumes ONTAP"^] .
+. ^6^ Per informazioni sui dischi interni per i dati di sistema per le distribuzioni HA con zone di disponibilità singole e multiple, fare riferimento a https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure (coppia ha)"^] .
+. ^7^ A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nel marketplace di Azure per gli abbonamenti con pagamento in base al consumo (PAYGO). https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["Fine della disponibilità delle licenze ottimizzate"^] .
 
 
 --
