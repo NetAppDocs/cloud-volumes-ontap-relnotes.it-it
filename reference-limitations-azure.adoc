@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache; limitations in HA deployment in MAZ, SAZ, multiple availability xone, single availability zone Azure CVO, PSSDv2, premium SSD v2 limitation in CVO, flash cache limitation in CVO 
 summary: Queste limitazioni note sono specifiche di Cloud Volumes ONTAP in Microsoft Azure. 
 ---
 = Limitazioni note per Cloud Volumes ONTAP in Azure
@@ -26,6 +26,34 @@ A partire dal 14 luglio 2025, NetApp invierà e-mail e ti notificherà in BlueXP
 
 
 
+== Limitazioni dei dischi Premium SSD v2 per configurazioni HA
+
+I dischi gestiti Premium SSD v2 presentano le seguenti limitazioni per le distribuzioni ad alta disponibilità (HA) in Azure:
+
+* Non supportato nelle distribuzioni HA in regioni non zonali.
+* Non supportato nelle distribuzioni HA su più zone di disponibilità.
+* Supportato solo nelle configurazioni HA distribuite all'interno di singole zone di disponibilità.
+
+
+Per utilizzare Premium SSD v2 Managed Disks con configurazioni Cloud Volumes ONTAP HA, assicurarsi che siano soddisfatti i seguenti requisiti:
+
+* La versione Cloud Volumes ONTAP è 9.15.1 o successiva.
+* La distribuzione HA avviene in una singola zona di disponibilità di Azure.
+* Le regioni e le zone selezionate supportano i dischi gestiti Premium SSD v2.  Per informazioni sulle regioni supportate, fare riferimento a https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sito Web di Microsoft Azure: prodotti disponibili per regione"^] .
+
+
+Per ulteriori informazioni, consulta  https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#support-for-premium-ssd-v2-managed-disks-in-azure["Supporto per dischi gestiti Premium SSD v2 in Azure"^] .
+
+
+
+== Limitazioni con le implementazioni di ha in singole zone di disponibilità
+
+A partire da Cloud Volumes ONTAP 9.15.1, è possibile distribuire istanze di macchine virtuali (VM) in modalità HA in singole zone di disponibilità (AZ) in Azure. Per informazioni sui criteri che supportano questa funzionalità, fare riferimento a https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure["Implementa coppie ha in singole zone di disponibilità in Azure"^] .
+
+Se la versione Cloud Volumes ONTAP è precedente alla 9.15.1 o se una di queste condizioni non è soddisfatta, il modello di distribuzione precedente che utilizza i set di disponibilità diventa effettivo. Ciò si applica solo alle configurazioni ha.
+
+
+
 == Limitazioni della cache flash
 
 Cloud Volumes ONTAP utilizza lo storage NVMe locale in alcuni tipi di macchine virtuali come _Flash cache_. Notare questa limitazione:
@@ -35,16 +63,8 @@ Cloud Volumes ONTAP utilizza lo storage NVMe locale in alcuni tipi di macchine v
 
 
 
-== Limiti delle implementazioni ad alta disponibilità
+== Limitazioni con le distribuzioni HA
 
-Le coppie ha (High Availability, alta disponibilità) non sono supportate in alcune regioni.
+Le coppie HA non sono supportate in alcune regioni.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco delle regioni Azure supportate"^].
-
-
-
-== Limitazioni con le implementazioni di ha in singole zone di disponibilità
-
-A partire da Cloud Volumes ONTAP 9.15.1, è possibile implementare istanze di macchine virtuali in modalità ha in singole zone di disponibilità (AZS) in Azure. Per informazioni sui criteri di supporto di questa funzione, fare riferimento a https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Implementa coppie ha in singole zone di disponibilità in Azure"^].
-
-Se la versione Cloud Volumes ONTAP è precedente alla 9.15.1 o se una di queste condizioni non è soddisfatta, il modello di distribuzione precedente che utilizza i set di disponibilità diventa effettivo. Ciò si applica solo alle configurazioni ha.
