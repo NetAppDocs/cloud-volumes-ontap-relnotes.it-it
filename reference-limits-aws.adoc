@@ -22,7 +22,7 @@ Cloud Volumes ONTAP ha limiti di configurazione dello storage per garantire oper
 
 La capacità massima del sistema include l'archiviazione basata su disco e l'archiviazione di oggetti utilizzata per la suddivisione in livelli dei dati.
 
-NetApp non supporta il superamento del limite di capacità del sistema. Se si raggiunge il limite di capacità concesso in licenza, BlueXP visualizza il messaggio Action Required (azione richiesta) e non consente più di aggiungere dischi aggiuntivi.
+NetApp non supporta il superamento del limite di capacità del sistema. Se si raggiunge il limite di capacità concesso in licenza, la console NetApp visualizza un messaggio che richiede un'azione e non consente più di aggiungere dischi aggiuntivi.
 
 Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering dei dati inattivi sullo storage a oggetti"^]. Per ulteriori informazioni, fare riferimento ai limiti di capacità e dischi riportati di seguito.
 
@@ -55,7 +55,7 @@ Limiti di capacità per altri tipi di licenza::
 Il limite di capacità è per l'intera coppia HA.  Non è per nodo.  Ad esempio, la licenza Premium consente fino a 368 TiB su entrambi i nodi.
 
 .Per un sistema ha in AWS, i dati mirrorati vengono conteggiati rispetto al limite di capacità?
-No, non è così. I dati di una coppia ha AWS vengono sottoposti a mirroring sincrono tra i nodi in modo che siano disponibili in caso di guasto. Ad esempio, se si acquista un disco 8 TIB sul nodo A, BlueXP alloca anche un disco 8 TIB sul nodo B utilizzato per i dati mirrorati. Sebbene sia stato eseguito il provisioning di 16 TIB di capacità, solo 8 TIB sono contati rispetto al limite di licenza.
+No, non è così. I dati in una coppia AWS HA vengono replicati in modo sincrono tra i nodi, in modo che siano disponibili in caso di errore. Ad esempio, se si acquista un disco da 8 TiB sul nodo A, la Console alloca anche un disco da 8 TiB sul nodo B, che viene utilizzato per i dati in mirroring. Sebbene siano stati forniti 16 TiB di capacità, solo 8 TiB vengono conteggiati nel limite della licenza.
 
 
 
@@ -408,7 +408,7 @@ Le istanze elencate di seguito si riferiscono alle famiglie di istanze c5, m5 e 
 | *.24xlarge | 50 | 44 | 24 | 12 
 |===
 . Questo numero indica quanti _rimanenti_ indirizzi IP privati sono disponibili sulla porta e0a dopo l'implementazione e la configurazione di Cloud Volumes ONTAP. Ad esempio, un sistema *.2xlarge supporta un massimo di 15 indirizzi IP per interfaccia di rete. Quando una coppia ha viene implementata in un singolo AZ, 5 indirizzi IP privati vengono allocati alla porta e0a. Di conseguenza, una coppia ha che utilizza un tipo di istanza *.2xlarge dispone di 10 indirizzi IP privati rimanenti per le VM di storage aggiuntive.
-. Il numero elencato in queste colonne include la VM di storage iniziale creata da BlueXP per impostazione predefinita. Ad esempio, se in questo articolo è elencato 24, significa che è possibile creare 23 VM di storage aggiuntive per un totale di 24.
+. Il numero elencato in queste colonne include la VM di archiviazione iniziale creata dalla Console per impostazione predefinita. Ad esempio, se in questa colonna è elencato 24, significa che è possibile creare 23 VM di archiviazione aggiuntive per un totale di 24.
 . Una LIF di gestione per la VM di storage è opzionale. Una LIF di gestione fornisce una connessione a strumenti di gestione come SnapCenter.
 +
 Poiché richiede un indirizzo IP privato, limita il numero di VM storage aggiuntive che è possibile creare. L'unica eccezione è una coppia ha in più AZS. In tal caso, l'indirizzo IP per la LIF di gestione è un indirizzo _floating_ IP, quindi non viene contato rispetto al limite _private_ IP.
@@ -452,7 +452,7 @@ Poiché richiede un indirizzo IP privato, limita il numero di VM storage aggiunt
 . La creazione di volumi FlexVol fino alla dimensione massima di 300 TiB è supportata utilizzando i seguenti strumenti e le versioni minime:
 +
 ** System Manager e la CLI di ONTAP a partire da Cloud Volumes ONTAP 9.12.1 P2 e 9.13.0 P2
-** BlueXP a partire da Cloud Volumes ONTAP 9.13.1
+** A partire da Cloud Volumes ONTAP 9.13.1
 
 
 
