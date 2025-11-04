@@ -80,12 +80,12 @@ Cloud Volumes ONTAP utilizza i volumi EBS come dischi e li raggruppa in _aggrega
 
 | Dischi per aggregato ^4^  a| 
 * 1-6
-* 1-8 con volumi elastici ^3^
+* 4 o 8 con volumi elastici ^3^
 
 
 
 
-| Numero massimo di gruppi RAID per aggregato | 1 
+| Numero massimo di gruppi RAID per aggregato | 2 
 |===
 Note:
 

@@ -16,6 +16,16 @@ summary: Cloud Volumes ONTAP 9.17.1 include un nuovo miglioramento.
 [role="lead"]
 Cloud Volumes ONTAP 9.17.1 è disponibile per la distribuzione e l'aggiornamento in Azure e Google Cloud.
 
+Nella versione più recente della NetApp Console sono state introdotte anche funzionalità e miglioramenti aggiuntivi. Per maggiori informazioni, vedi le novità in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] gestito nella Console.
+
+
+
+== 9.17.1 P1 (04 novembre 2025)
+
+La patch Cloud Volumes ONTAP 9.17.1 P1 è ora disponibile per la distribuzione e l'aggiornamento in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per la distribuzione e l'aggiornamento in AWS. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["Visualizza l'elenco dei bug risolti nella patch P1"^](È necessario effettuare l'accesso al sito di supporto NetApp ).
+
 
 
 == 9.17.1 RC1 (4 settembre 2025)

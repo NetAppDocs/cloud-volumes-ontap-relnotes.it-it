@@ -427,7 +427,6 @@
   <block id="eba85a087985c7150b43d2878dd0c2da" category="list-text">128 TIB di capacità raw con volumi elastici ^3^</block>
   <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">Dischi per aggregato ^4^</block>
   <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
-  <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8 con volumi elastici ^3^</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">Limiti di dischi e tiering per istanza EC2</block>
   <block id="4309266475af7c71bb88f9be6f8c3940" category="paragraph">I limiti di capacità variano a seconda della famiglia di tipi di istanze EC2 utilizzata e se si utilizza un sistema a nodo singolo o una coppia ha.</block>
   <block id="b1fb395f7c47ced4c12fc74fad2320b5" category="paragraph">Le seguenti note forniscono informazioni dettagliate sui numeri visualizzati nelle tabelle seguenti:</block>
@@ -849,4 +848,12 @@
   <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.17.1 RC1 dalla versione 9.16.1 in Azure e Google Cloud. La Console ti chiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">Console NetApp</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">Servizi dati NetApp</block>
+  <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">4 o 8 con volumi elastici ^3^</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
+  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">Nella versione più recente della NetApp Console sono state introdotte anche funzionalità e miglioramenti aggiuntivi. Per maggiori informazioni, vedi le novità in<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> gestito nella Console.</block>
+  <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1 (04 novembre 2025)</block>
+  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">La patch Cloud Volumes ONTAP 9.17.1 P1 è ora disponibile per la distribuzione e l'aggiornamento in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per la distribuzione e l'aggiornamento in AWS. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Visualizza l'elenco dei bug risolti nella patch P1</block>
+  <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>(È necessario effettuare l'accesso al sito di supporto NetApp ).</block>
 </blocks>
