@@ -20,6 +20,14 @@ Le nuove funzionalità Cloud Volumes ONTAP sono state introdotte anche nelle ult
 
 
 
+== 9.17.1 P2 (04 dicembre 2025)
+
+La patch Cloud Volumes ONTAP 9.17.1 P2 è ora disponibile per l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P2["Visualizza l'elenco dei bug risolti nella patch P2"^](È necessario effettuare l'accesso al sito di supporto NetApp ).
+
+
+
 == 9.17.1 P1 (04 novembre 2025)
 
 La patch Cloud Volumes ONTAP 9.17.1 P1 è ora disponibile per la distribuzione e l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
