@@ -871,4 +871,8 @@
   <block id="6fca818cb2b74d72dd8849c2a4e34d2b" category="list-text">E48ds_v6 ^8^</block>
   <block id="bbc7e0e0269760cbd08e32205763eede" category="list-text">E64ds_v6 ^8^</block>
   <block id="312c1718d8151f9dd3f53ad516f59210" category="list-text">^8^ I tipi di VM Edsv6 sono supportati per le nuove distribuzioni di Cloud Volumes ONTAP 9.17.1 e versioni successive. Non è possibile cambiare una distribuzione esistente con un altro tipo di VM, ad esempio da Edsv5 a Edsv6; sono supportate solo le modifiche delle dimensioni tra le varianti di Edsv6 (ad esempio E20ds_v6 → E32ds_v6). Per informazioni su questo tipo di VM, fare riferimento a<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
+  <block id="78ca1e9b4071731d926af62548edb6ec" category="section-title">9.17.1 P3 (22 dicembre 2025)</block>
+  <block id="052ffa7a1e7c8dd40078c40c114b4029" category="paragraph">La patch Cloud Volumes ONTAP 9.17.1 P3 è ora disponibile per l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.</block>
+  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Visualizza l'elenco dei bug risolti nella patch P3</block>
+  <block id="d0805c87e6349186d93041afd3764619" category="paragraph"><block ref="d209673dd7156618bec41c386164b39f" category="inline-link-macro-rx"></block>(È necessario effettuare l'accesso al sito di supporto NetApp ).</block>
 </blocks>
