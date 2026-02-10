@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.17.1 include un nuovo miglioramento. 
+summary: Cloud Volumes ONTAP 9.18.1 include una nuova miglioria. 
 ---
-= Novità di Cloud Volumes ONTAP 9.17.1
+= Novità in Cloud Volumes ONTAP 9.18.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,42 +14,15 @@ summary: Cloud Volumes ONTAP 9.17.1 include un nuovo miglioramento.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.17.1 include nuovi miglioramenti.
+Ora puoi distribuire e aggiornare a Cloud Volumes ONTAP 9.18.1. Puoi visualizzare la versione base di questa release e le ultime versioni delle patch disponibili per la distribuzione e l'aggiornamento nella Console.
 
-Le nuove funzionalità Cloud Volumes ONTAP sono state introdotte anche nelle ultime versioni di NetApp Console. Per maggiori informazioni, vedi le novità in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] gestito nella Console.
-
-
-
-== 9.17.1 P3 (22 dicembre 2025)
-
-La patch Cloud Volumes ONTAP 9.17.1 P3 è ora disponibile per l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["Visualizza l'elenco dei bug risolti nella patch P3"^](È necessario effettuare l'accesso al sito di supporto NetApp ).
+Per conoscere le funzionalità di Cloud Volumes ONTAP introdotte nelle ultime versioni della NetApp Console, consulta le novità in  https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^].
 
 
 
-== 9.17.1 P2 (04 dicembre 2025)
+== 9.18.1 GA (10 febbraio 2026)
 
-La patch Cloud Volumes ONTAP 9.17.1 P2 è ora disponibile per l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P2["Visualizza l'elenco dei bug risolti nella patch P2"^](È necessario effettuare l'accesso al sito di supporto NetApp ).
-
-
-
-== 9.17.1 P1 (04 novembre 2025)
-
-La patch Cloud Volumes ONTAP 9.17.1 P1 è ora disponibile per la distribuzione e l'aggiornamento in AWS, Azure e Google Cloud. La console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["Visualizza l'elenco dei bug risolti nella patch P1"^](È necessario effettuare l'accesso al sito di supporto NetApp ).
-
-
-
-== 9.17.1 RC1 (4 settembre 2025)
-
-Ora puoi utilizzare la Release Candidate 1 di Cloud Volumes ONTAP 9.17.1 per la distribuzione e l'aggiornamento in Azure e Google Cloud.
-
-
-NOTE: Questa versione non è disponibile per la distribuzione e l'aggiornamento in AWS.
+La release General Availability di Cloud Volumes ONTAP 9.18.1 è ora disponibile per la distribuzione e l'aggiornamento in Amazon Web Services (AWS) e Microsoft Azure. Questa versione non è disponibile per la distribuzione e l'aggiornamento in Google Cloud.
 
 
 
@@ -69,7 +42,10 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Percorso di upgrade supportato
 
-È possibile effettuare l'aggiornamento a Cloud Volumes ONTAP 9.17.1 dalla versione 9.16.1 in AWS, Azure e Google Cloud.  Per AWS, è possibile effettuare l'aggiornamento a Cloud Volumes ONTAP 9.17.1 P1 e versioni successive.  La Console ti chiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.
+È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.18.1 dalle patch 9.17.1 P1 e successive in AWS e Azure. La Console richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.
+
+
+NOTE: Cloud Volumes ONTAP 9.18.1 non è disponibile per l'upgrade in Google Cloud.
 
 
 
