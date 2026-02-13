@@ -51,6 +51,6 @@ NOTE: Cloud Volumes ONTAP 9.18.1 non è disponibile per l'upgrade in Google Clou
 
 === Downtime
 
-* L'aggiornamento di un sistema a nodo singolo porta il sistema offline per un massimo di 25 minuti, durante i quali l'i/o viene interrotto.
+* L'upgrade di un sistema a nodo singolo mette il sistema offline per un massimo di 25 minuti, durante i quali l'I/O viene interrotto.
 * L'upgrade di una coppia ha non comporta interruzioni e l'i/o rimane ininterrotto. Durante questo processo di upgrade senza interruzioni, ogni nodo viene aggiornato in tandem per continuare a fornire i/o ai client.
 

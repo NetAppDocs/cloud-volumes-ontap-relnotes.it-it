@@ -20,9 +20,9 @@ In AWS sono supportate diverse configurazioni Cloud Volumes ONTAP.
 
 == Numero di nodi supportati
 
-Cloud Volumes ONTAP è disponibile in AWS come sistema a nodo singolo e come coppia di nodi ad alta disponibilità (ha) per la fault tolerance e le operazioni senza interruzioni.
+Cloud Volumes ONTAP è disponibile in AWS come sistema a nodo singolo e come coppia HA di nodi per tolleranza agli errori e operazioni senza interruzioni.
 
-L'aggiornamento di un sistema a nodo singolo a una coppia ha non è supportato. Se si desidera passare da un sistema a nodo singolo a una coppia ha, è necessario implementare un nuovo sistema e replicare i dati dal sistema esistente al nuovo sistema.
+L'aggiornamento di un sistema a nodo singolo a una coppia HA non è supportato. Se si desidera passare da un sistema a nodo singolo a una coppia HA, è necessario implementare un nuovo sistema e replicare i dati dal sistema esistente al nuovo sistema.
 
 
 
@@ -79,7 +79,7 @@ Grazie alle licenze basate sulla capacità, ogni sistema Cloud Volumes ONTAP sup
 
 
 --
-.Licenze basate su nodo
+.Altre licenze
 --
 [cols="h,d,d,d,d"]
 |===
@@ -245,8 +245,8 @@ Le larghezze di banda mostrate nella tabella seguente corrispondono ai limiti AW
 | m6id.32xlarge | 64 ^4^ | 512 | Supportato | 50 | 40,000 | Supportato 
 |===
 . Alcuni tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Flash cache accelera l'accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per i carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service. La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Scopri di più su Flash cache"^].
-. Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con la maggior parte dei tipi di istanze quando si utilizza una coppia ha. L'elevata velocità di scrittura è supportata con tutti i tipi di istanze quando si utilizza un sistema a nodo singolo. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Scopri di più sulla scelta della velocità di scrittura"^].
-. Il tipo di istanza r5.12xlarge presenta un limite noto per la supportabilità. Se un nodo si riavvia inaspettatamente a causa di un panico, il sistema potrebbe non raccogliere i file principali utilizzati per la risoluzione dei problemi e causare il problema. Il cliente accetta i rischi e i termini di supporto limitati e si assume la responsabilità del supporto in caso di questa condizione. Questa limitazione riguarda le coppie ha e ha recentemente implementate, aggiornate dal 9.8. La limitazione non riguarda i sistemi a nodo singolo appena implementati.
+. Cloud Volumes ONTAP supporta un'elevata velocità di scrittura con la maggior parte dei tipi di istanza quando si utilizza una coppia HA. L'elevata velocità di scrittura è supportata con tutti i tipi di istanza quando si utilizza un sistema a nodo singolo. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Scopri di più sulla scelta della velocità di scrittura"^]
+. Il tipo di istanza r5.12xlarge presenta una limitazione nota in termini di supportabilità. Se un nodo si riavvia inaspettatamente a causa di un panic, il sistema potrebbe non raccogliere i file core utilizzati per la risoluzione dei problemi e per individuarne la causa principale. Il cliente accetta i rischi e i termini di supporto limitato e si assume tutta la responsabilità del supporto qualora si verifichi questa condizione. Questa limitazione riguarda le coppie HA appena distribuite e le coppie HA aggiornate dalla 9.8. La limitazione non riguarda i sistemi a nodo singolo appena distribuiti.
 . Sebbene questi tipi di istanze EC2 supportino più di 64 vCPU, Cloud Volumes ONTAP supporta solo fino a 64 vCPU.
 . Quando si sceglie un tipo di istanza EC2, è possibile specificare se si tratta di un'istanza condivisa o dedicata.
 . Le zone locali AWS sono supportate nelle seguenti famiglie di tipi di istanza EC2 con dimensioni da xlarge a 4XLarge: M5, C5, C5d, R5 e R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Fai riferimento ad AWS per i dettagli più recenti e completi sui tipi di istanze EC2 supportati nelle zone locali"^].

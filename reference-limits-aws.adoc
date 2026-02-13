@@ -99,7 +99,7 @@ Note:
 
 == Limiti di dischi e tiering per istanza EC2
 
-I limiti di capacità variano a seconda della famiglia di tipi di istanze EC2 utilizzata e se si utilizza un sistema a nodo singolo o una coppia ha.
+I limiti di capacità sono diversi a seconda della famiglia di tipi di istanze EC2 che si utilizza e se si utilizza un sistema a nodo singolo o una coppia HA.
 
 Le seguenti note forniscono informazioni dettagliate sui numeri visualizzati nelle tabelle seguenti:
 

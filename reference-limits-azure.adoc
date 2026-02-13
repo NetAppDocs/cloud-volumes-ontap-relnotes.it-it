@@ -96,7 +96,7 @@ I limiti non includono il disco root, il disco core e la VNVRAM.
 * È possibile visualizzare la capacità massima del sistema quando si utilizzano solo dischi e quando si utilizzano dischi e livelli di dati freddi per l'archiviazione di oggetti.
 * I sistemi a nodo singolo e ha che utilizzano dischi gestiti hanno un massimo di 32 TIB per disco. Il numero di dischi supportati varia in base alle dimensioni della macchina virtuale.
 * I sistemi HA che utilizzano i blob di pagina hanno un massimo di 8 TIB per blob di pagina. Il numero di dischi supportati varia in base alle dimensioni della macchina virtuale.
-* Il limite 896 TIB basato su disco elencato per i sistemi a nodo singolo con determinate dimensioni delle macchine virtuali è il limite _testato_.
+* Il limite di 896 TiB basato su disco elencato per i sistemi a nodo singolo con determinate dimensioni di VM è il limite _testato_.
 
 
 
