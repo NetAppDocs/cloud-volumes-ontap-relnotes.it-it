@@ -166,7 +166,7 @@ Allo stesso modo, se si sceglie Premium SSD Managed Disks per un ambiente che so
 
 
 --
-.Licenze basate su nodo
+.Altre licenze
 --
 [cols="h,d,d,d,d"]
 |===
@@ -381,7 +381,7 @@ Note:
 
 
 --
-.Licenze basate su nodo
+.Altre licenze
 --
 [cols="h,d,d,d"]
 |===
@@ -543,7 +543,7 @@ Note:
 
 
 --
-.Licenze basate su nodo
+.Altre licenze
 --
 [cols="h,d,d,d"]
 |===
