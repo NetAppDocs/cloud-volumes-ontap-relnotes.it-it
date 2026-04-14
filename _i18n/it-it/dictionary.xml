@@ -338,7 +338,6 @@
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Scopri di più sui limiti dei dischi in Google Cloud</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP può essere eseguito su un'istanza di macchina virtuale riservata o on-demand dal tuo cloud provider. Le soluzioni che utilizzano altri tipi di istanze di macchine virtuali non sono supportate.</block>
-  <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash cache_, High Write Mode e MTU di 8,896 sono dipendenti dalle funzionalità e non possono essere disabilitati singolarmente all'interno di un'istanza configurata.</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">In Google Cloud, un aggregato può contenere fino a 6 dischi dello stesso tipo e dimensione. Sono supportate le seguenti dimensioni dei dischi:</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100 GB</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1 TB</block>
@@ -864,7 +863,6 @@
   <block id="a10a9e62fc438d5cda957750f5be82a2" category="list-text">E64bds_v5 ^9^</block>
   <block id="22526b360edd5e859e84ac73135c26a8" category="list-text">E104ids_v5 ^9^</block>
   <block id="b8a35e66cdb2aef61b6d6df1e379eb6d" category="list-text">^9^ Le VM Ebdsv5 ed E104ids_v5 sono disponibili per nuove distribuzioni e upgrade di Cloud Volumes ONTAP 9.18.1 e versioni successive. Puoi cambiare o eseguire l'upgrade delle tue VM Edsv4, Edsv5 o altri tipi di VM Ebdsv5 esistenti a Ebdsv5. Puoi eseguire l'upgrade delle VM Ebdsv5 o Eidsv5 a E104ids_v5.</block>
-  <block id="2734a588d77e522c61fe0ebc740d82c8" category="list-text">^7^ Le VM Ebdsv5 ed E104ids_v5 sono disponibili per nuove distribuzioni e aggiornamenti di Cloud Volumes ONTAP 9.18.1 e versioni successive. È possibile modificare o aggiornare le VM Edsv4, Edsv5 o altre VM Ebdsv5 esistenti a Ebdsv5. È possibile aggiornare le VM Ebdsv5 o Eidsv5 a E104ids_v5.</block>
   <block id="9c1e913676fba2b8aed76868b26dcc89" category="paragraph">I sistemi a nodo singolo utilizzano Azure Managed Disks. Le seguenti dimensioni di disco sono supportate:</block>
   <block id="7da25d0bfd841afbb16233681b5b72ca" category="paragraph">Cloud Volumes ONTAP è disponibile in Google Cloud come sistema a nodo singolo e come coppia HA di nodi per tolleranza agli errori e operazioni senza interruzioni.</block>
   <block id="bd45cef377eedc42228cc5c125be0686" category="paragraph">L'aggiornamento di un sistema a nodo singolo a una coppia HA non è supportato. Se si desidera passare da un sistema a nodo singolo a una coppia HA, è necessario implementare un nuovo sistema e replicare i dati dal sistema esistente al nuovo sistema.</block>
@@ -881,13 +879,11 @@
   <block id="71fb3d90d5bc2f0c21c4b59bfd197d67" category="list-text">c3-standard-88, c3-standard-88-lssd ^5^</block>
   <block id="440594064d57a904b2c7fce0bdfa4a39" category="cell">Dischi persistenti bilanciati ^3^, dischi persistenti Performance (SSD) ^3^ e dischi persistenti Standard (HDD). Le VM C3 supportano solo dischi Hyperdisk Balanced.</block>
   <block id="d60c6adcad1706add7c779a42393ec88" category="inline-link-macro">Supporto Flash Cache</block>
-  <block id="60c0844205cf1310833606006fa8b6fa" category="list-text">^5^ È possibile distribuire le VM di prossima generazione della famiglia C3 su Cloud Volumes ONTAP 9.18.1 e versioni successive. Le macchine c3-standard-44 e c3-standard-88 e le relative varianti LSSD supportano la larghezza di banda Tier-1 in Google Cloud Console per impostazione predefinita. Con i tipi di VM C3, non è possibile aggiungere un disco a un aggregato esistente o passare a un'altra variante all'interno della famiglia C3. Fare riferimento a <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> per ulteriori informazioni sulle varianti LSSD.</block>
   <block id="c24cb0b82dac3c2a02963bf23b1d0650" category="cell">Dischi persistenti bilanciati ^4^, dischi persistenti Performance (SSD) ^4^ e dischi persistenti Standard (HDD). Le VM C3 supportano solo dischi Hyperdisk Balanced.</block>
   <block id="10c35d6a4a80bde624a9ba13f97ce24a" category="section-title">Coppie ad alta disponibilità (HA)</block>
   <block id="fab4c4cf338a8dd4c15c662d65f36827" category="cell">Capacità massima del sistema in base alla licenza (dischi + storage a oggetti)</block>
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">Avvio di Cloud Volumes ONTAP in Google Cloud</block>
   <block id="80a9aa4591dfcec1028b269fd96084b5" category="paragraph">È possibile abilitare _Flash Cache_ e un'elevata velocità di scrittura durante la distribuzione di un tipo di istanza idoneo. Per abilitare l'unità di trasmissione massima più elevata di 8.896 byte, è necessario scegliere VPC-1, VPC-2 o VPC-3 per la distribuzione. L'MTU più elevato consente un throughput di rete maggiore. Per ulteriori informazioni sull'avvio di una di queste distribuzioni, vedere <block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block>.</block>
-  <block id="d076c2db8ac31c31f4b9d088a8b87a24" category="paragraph">A partire da Cloud Volumes ONTAP 9.18.1, se si selezionano le varianti di SSD locali (LSSD) delle VM C3, Flash Cache viene abilitato per impostazione predefinita. Consultare questa tabella per comprendere la variante di VM e il numero massimo di LSSD supportati da esse:</block>
   <block id="d54092cc3c2c2778d416f1225b37f056" category="cell">Tipo di macchina virtuale</block>
   <block id="7fbb74773227f16e493c8d262749ccfc" category="cell">Numero di dischi LSSD collegati</block>
   <block id="e16e833ea94b9887a3dc1398681e4002" category="cell">c3-standard-4-lssd</block>
@@ -912,4 +908,18 @@
   <block id="66b93dcdc5716dedd5e7fcf8a6f2c744" category="paragraph">La patch Cloud Volumes ONTAP 9.18.1 P1 è ora disponibile per la distribuzione e l'aggiornamento su AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Visualizza l'elenco dei bug risolti nella patch P1</block>
   <block id="d4e91a63e862afe5d30e173965c6c4a1" category="paragraph"><block ref="eb1c958143bf6120158dde219a58c506" category="inline-link-macro-rx"></block> (accesso al sito di supporto NetApp richiesto).</block>
+  <block id="180b53d09539df4cd298ca82cb98c8bb" category="example-title">Serie DSv2</block>
+  <block id="ffe4ca59df6616b254c0040e73c39f29" category="example-title">Serie Ebdsv5</block>
+  <block id="ad3e18365947f98cd146bb09d36a6798" category="example-title">Serie Edsv4</block>
+  <block id="01fccaba70ed8fb928632a75b5d1a213" category="example-title">Serie Edsv5</block>
+  <block id="e9608387c81779c09348e6e33faf76df" category="example-title">Serie Edsv6</block>
+  <block id="567c28529cbc2d54b6f507e897297508" category="example-title">Serie Esv3</block>
+  <block id="7c7463f1a66713791639f6ac5fd233c8" category="example-title">Serie Lsv3</block>
+  <block id="34e6880c88acc332512e9f643fb56b1f" category="example-title">Serie Edsv5</block>
+  <block id="96623089d34324947cb85e45a7aa6d71" category="example-title">Serie Edsv6</block>
+  <block id="74236a30875ab4ba4eba0b2066b112a0" category="example-title">Serie Dsv2</block>
+  <block id="83ec1da92379d4aa7444743f42a48c24" category="list-text">^5^ È possibile distribuire le VM di prossima generazione della famiglia C3 su Cloud Volumes ONTAP 9.18.1 e versioni successive. Le macchine c3-standard-44 e c3-standard-88 e le relative varianti LSSD supportano la larghezza di banda Tier-1 in Google Cloud Console per impostazione predefinita. Fare riferimento a <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> per ulteriori informazioni sulle varianti LSSD.</block>
+  <block id="e4dc6128b719feb8c40c1a651d390050" category="admonition">_Flash Cache_, modalità di scrittura elevata e un MTU di 8,896 sono funzionalità dipendenti e non possono essere disabilitate singolarmente all'interno di un'istanza configurata.</block>
+  <block id="c538e24ff658f3f0f3239b6f8d51e48f" category="paragraph">Nelle implementazioni a nodo singolo, a partire da Cloud Volumes ONTAP 9.18.1, se si selezionano le varianti LSSD (Local SSD) delle VM C3, Flash Cache viene abilitato per impostazione predefinita. Non è possibile passare tra le varianti di VM C3 LSSD nell'implementazione di Cloud Volumes ONTAP, anche se la variante di destinazione supporta Flash Cache.</block>
+  <block id="bbbc2c55d76f069b82eb0de6bf28057d" category="paragraph">Consulta questa tabella per comprendere la variante di VM e il numero di LSSD supportati da essa:</block>
 </blocks>
