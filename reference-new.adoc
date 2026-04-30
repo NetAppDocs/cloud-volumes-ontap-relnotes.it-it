@@ -20,6 +20,14 @@ Per conoscere le funzionalità di Cloud Volumes ONTAP introdotte nelle ultime ve
 
 
 
+== 9.18.1 P2 (30 aprile 2026)
+
+La patch Cloud Volumes ONTAP 9.18.1 P2 è ora disponibile per la distribuzione e l'aggiornamento su AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2["Visualizza l'elenco dei bug risolti nella patch P2"^] (accesso al sito di supporto NetApp richiesto).
+
+
+
 == 9.18.1 P1 (31 marzo 2026)
 
 La patch Cloud Volumes ONTAP 9.18.1 P1 è ora disponibile per la distribuzione e l'aggiornamento su AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
