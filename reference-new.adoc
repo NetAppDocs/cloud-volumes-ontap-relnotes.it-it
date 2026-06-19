@@ -24,13 +24,19 @@ Per conoscere le funzionalità di Cloud Volumes ONTAP introdotte nelle ultime ve
 
 La patch Cloud Volumes ONTAP 9.18.1 P2 è ora disponibile per la distribuzione e l'aggiornamento su AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
 
+
+NOTE: Per AWS, Cloud Volumes ONTAP 9.18.1 P2 è la versione standard per la distribuzione e l'aggiornamento. Qualsiasi versione precedente o patch di 9.18.1 non è supportata.
+
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2["Visualizza l'elenco dei bug risolti nella patch P2"^] (accesso al sito di supporto NetApp richiesto).
 
 
 
 == 9.18.1 P1 (31 marzo 2026)
 
-La patch Cloud Volumes ONTAP 9.18.1 P1 è ora disponibile per la distribuzione e l'aggiornamento su AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione di patch.
+La patch Cloud Volumes ONTAP 9.18.1 P1 è ora disponibile per la distribuzione e l'aggiornamento in Azure e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa versione della patch.
+
+
+NOTE: Questa versione non è disponibile per la distribuzione e l'aggiornamento in AWS.
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["Visualizza l'elenco dei bug risolti nella patch P1"^] (accesso al sito di supporto NetApp richiesto).
 
@@ -38,7 +44,10 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 == 9.18.1 GA (10 febbraio 2026)
 
-La release di disponibilità generale di Cloud Volumes ONTAP 9.18.1 è ora disponibile per la distribuzione e l'aggiornamento in Amazon Web Services (AWS), Microsoft Azure e Google Cloud.
+La release Cloud Volumes ONTAP 9.18.1 General Availability è ora disponibile per il deployment e l'upgrade in Microsoft Azure e Google Cloud.
+
+
+NOTE: Questa versione non è disponibile per la distribuzione e l'aggiornamento in Amazon Web Services (AWS).
 
 
 
