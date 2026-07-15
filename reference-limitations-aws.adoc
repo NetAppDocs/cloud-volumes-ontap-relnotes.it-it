@@ -18,6 +18,7 @@ Le seguenti limitazioni note sono specifiche di Cloud Volumes ONTAP in Amazon We
 
 
 
+[[aws-outpost-limitations]]
 == Limitazioni AWS Outpost
 
 Se disponi di un AWS Outpost, puoi distribuire Cloud Volumes ONTAP in quell'Outpost selezionando l'Outpost VPC durante la distribuzione. L'esperienza è la stessa di qualsiasi altra VPC residente in AWS.  Tieni presente che dovrai prima distribuire un agente Console nel tuo AWS Outpost.
@@ -31,6 +32,7 @@ Vi sono alcune limitazioni da sottolineare:
 
 
 
+[[flash-cache-limitations]]
 == Limitazioni della cache flash
 
 I tipi di istanze C5D e R5D includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come _Flash cache_. Tenere presente le seguenti limitazioni:
@@ -44,12 +46,14 @@ I tipi di istanze C5D e R5D includono lo storage NVMe locale, utilizzato da Clou
 
 
 
+[[false-alarms-reported-by-amazon-cloudwatch]]
 == Falsi allarmi segnalati da Amazon CloudWatch
 
 Cloud Volumes ONTAP non rilascia CPU quando è inattivo, così https://aws.amazon.com/cloudwatch/["Amazon CloudWatch"^] Può segnalare un avviso CPU elevato per l'istanza EC2 perché rileva un utilizzo del 100%. È possibile ignorare questo allarme. Il comando ONTAP statistics (Statistiche CPU) visualizza l'utilizzo effettivo delle CPU.
 
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == Le coppie Cloud Volumes ONTAP ha non supportano il giveback immediato dello storage
 
 Dopo il riavvio di un nodo, il partner deve sincronizzare i dati prima di poter restituire lo storage. Il tempo necessario per risincronizzare i dati dipende dalla quantità di dati scritti dai client mentre il nodo era inattivo e dalla velocità di scrittura dei dati durante il periodo di giveback.

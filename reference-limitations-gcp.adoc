@@ -18,6 +18,7 @@ Le seguenti limitazioni note sono specifiche di Cloud Volumes ONTAP nella piatta
 
 
 
+[[limitation-with-packet-mirroring]]
 == Limitazione con il mirroring dei pacchetti
 
 https://cloud.google.com/vpc/docs/packet-mirroring["Mirroring dei pacchetti"^] Deve essere disattivato nel VPC Google Cloud in cui si implementa Cloud Volumes ONTAP.
@@ -26,6 +27,7 @@ Cloud Volumes ONTAP non può funzionare correttamente se il mirroring dei pacche
 
 
 
+[[google-private-service-connect-limitations]]
 == Limitazioni di Google Private Service Connect
 
 Se fai leva https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] all'interno della VPC in cui stai distribuendo Cloud Volumes ONTAP , dovrai implementare record DNS che inoltrano il traffico al server richiesto https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Endpoint API"^] .
