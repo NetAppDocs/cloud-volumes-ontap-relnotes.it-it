@@ -74,4 +74,5 @@
   <block id="779179d87fedb0f1d19bc08238c479a7" category="paragraph"><block ref="675aaf3b5e84a93fbce00d949a5f961a" category="inline-link-rx"></block>.</block>
   <block id="1ba2a5867ae8351321f6970817584236" category="paragraph">Puoi eseguire l'aggiornamento a Cloud Volumes ONTAP 9.19.1 da 9.18.1 su AWS e Google Cloud. La Console ti chiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa release.</block>
   <block id="2962b8222cacec8cb18f5c8cdf1f04eb" category="admonition">In Azure non ti verrà richiesto di eseguire l'aggiornamento alla versione 9.19.1 perché questa versione non è disponibile per la distribuzione e l'aggiornamento in questo cloud provider.</block>
+  <block id="6b9b9e55102bb13f1ca535f28c0d3a98" category="doc">Note legali per Cloud Volumes ONTAP</block>
 </blocks>
