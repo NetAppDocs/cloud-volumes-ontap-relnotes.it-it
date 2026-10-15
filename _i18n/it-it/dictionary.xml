@@ -63,16 +63,15 @@
   <block id="777aa7f6fc6d119be846af0333b88f27" category="list-text">L'upgrade di un sistema a nodo singolo mette il sistema offline per un massimo di 25 minuti, durante i quali l'I/O viene interrotto.</block>
   <block id="b0f94eabc09f0c220518c1307ae04061" category="summary">Cloud Volumes ONTAP 9.19.1 include una nuova miglioria.</block>
   <block id="75772205d115792b7e022b200e4e6a95" category="doc">Novità in Cloud Volumes ONTAP 9.19.1</block>
-  <block id="98236d20e4670591965cd4dfd21922a9" category="paragraph">Ora puoi distribuire e aggiornare a Cloud Volumes ONTAP 9.19.1. Puoi visualizzare la versione base di questa release e le ultime versioni delle patch disponibili per la distribuzione e l'aggiornamento nella Console.</block>
   <block id="047a301669757aed8837c50560f7106c" category="sidebar">Queste note di rilascio descrivono le nuove funzionalità, le limitazioni e i problemi noti per Cloud Volumes ONTAP 9.19.1.</block>
   <block id="acfc3dd2bf5b3c0cdaff3742dc4e677d" category="sidebar">Cloud Volumes ONTAP 9.19.1 Note di rilascio</block>
   <block id="baa4551a28b9b9b693078dff3d23a9c8" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.19.1</block>
   <block id="1a523ba4ece9125275b92ebb41e3cf23" category="inline-link">Documentazione di Cloud Volumes ONTAP</block>
-  <block id="beecc6122c1c255f72dcdc6b55547dd4" category="paragraph">Per saperne di più sulle funzionalità di Cloud Volumes ONTAP, le configurazioni supportate, i limiti e altro ancora, vedi <block ref="ea5552b8f9c3766b3dbd6170754013e4" category="inline-link-rx"></block>.</block>
-  <block id="e5db128c051c458ffd6845d0676ec51e" category="section-title">9.19.1 (10 agosto 2026)</block>
-  <block id="11a01aa0f08b855e4b36226d278e2f8b" category="paragraph">La versione 9.19.1 General Availability (GA) di Cloud Volumes ONTAP è ora disponibile per la distribuzione e l'aggiornamento solo su Amazon Web Services (AWS) e Google Cloud. Questa versione non è disponibile per la distribuzione e l'aggiornamento su Microsoft Azure (Azure).</block>
   <block id="779179d87fedb0f1d19bc08238c479a7" category="paragraph"><block ref="675aaf3b5e84a93fbce00d949a5f961a" category="inline-link-rx"></block>.</block>
-  <block id="1ba2a5867ae8351321f6970817584236" category="paragraph">Puoi eseguire l'aggiornamento a Cloud Volumes ONTAP 9.19.1 da 9.18.1 su AWS e Google Cloud. La Console ti chiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa release.</block>
-  <block id="2962b8222cacec8cb18f5c8cdf1f04eb" category="admonition">In Azure non ti verrà richiesto di eseguire l'aggiornamento alla versione 9.19.1 perché questa versione non è disponibile per la distribuzione e l'aggiornamento in questo cloud provider.</block>
   <block id="6b9b9e55102bb13f1ca535f28c0d3a98" category="doc">Note legali per Cloud Volumes ONTAP</block>
+  <block id="6f82beee1a412af19544afdfeffbfe31" category="paragraph">Ora puoi eseguire il deployment e l'aggiornamento a Cloud Volumes ONTAP 9.19.1. Nella Console di NetApp, puoi visualizzare la versione base di questa release e le versioni patch più recenti disponibili per il deployment e l'aggiornamento.</block>
+  <block id="0aaa2e001314b768511bce26fe0c1776" category="paragraph">Per saperne di più sulle funzionalità di Cloud Volumes ONTAP, le configurazioni supportate, i limiti e altro ancora, vedi <block ref="6e7acef710daada33b416be137136a2e" category="inline-link-rx"></block>.</block>
+  <block id="00305f14a5070c1c507692101e1b5f2a" category="section-title">9.19.1 GA</block>
+  <block id="5feeec301b3ad963361e2c7b26b8036f" category="paragraph">La versione General Availability (GA) 9.19.1 di Cloud Volumes ONTAP è ora disponibile per la distribuzione e l'aggiornamento in Amazon Web Services (AWS), Microsoft Azure (Azure) e Google Cloud.</block>
+  <block id="83b5c85b7b7c82ae7b0883b1a1e83be7" category="paragraph">Puoi eseguire l'aggiornamento a Cloud Volumes ONTAP 9.19.1 da 9.18.1 in AWS, Azure e Google Cloud. La Console ti chiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.</block>
 </blocks>
