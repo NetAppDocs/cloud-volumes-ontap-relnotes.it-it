@@ -20,6 +20,15 @@ Per saperne di più sulle funzionalità di Cloud Volumes ONTAP, le configurazion
 
 
 
+[[9-19-1-p4-12-november-2026]]
+== 9.19.1 P4 (12 novembre 2026)
+
+La patch Cloud Volumes ONTAP 9.19.1 P4 è ora disponibile per la distribuzione e l'aggiornamento in Amazon Web Services (AWS), Microsoft Azure (Azure) e Google Cloud. La Console ti chiederà di aggiornare i tuoi sistemi esistenti a questa patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.19.1P4["Visualizza l'elenco dei bug risolti nella patch P4"^] (accesso al sito di supporto NetApp richiesto).
+
+
+
 [[9-19-1-ga]]
 == 9.19.1 GA
 
